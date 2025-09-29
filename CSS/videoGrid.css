@@ -1,0 +1,174 @@
+.video-carousel-wrapper {
+  position: relative;
+  width: 100%; /* adapt to your needs */
+  margin: 2% auto;
+  overflow: hidden;
+}
+
+
+/* Container */
+.heading-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 2%;
+}
+
+/* Main heading */
+.heading-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 0 0 5%;
+}
+
+.heading-main p {
+  font-family: 'Maison Neue Ext Demi', sans-serif;
+  font-size: 51px;
+  line-height: 1em;
+  letter-spacing: 0;
+  color: #ffffff;
+  margin: 0;
+}
+
+/* Sub heading */
+.heading-sub {
+  display: flex;
+  flex-direction: column;
+  justify-content:end;
+}
+
+.heading-sub p {
+  font-family: 'Maison Neue Medium', sans-serif;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0;
+}
+
+.heading-sub a {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+
+.heading-sub a:hover {
+  text-decoration: underline;
+}
+
+
+.video-flex {
+  display: flex;
+  gap: 2px;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  padding: 0 5%;
+}
+
+.video-container {
+  position: relative;
+  width: 20%;
+  max-width: 600px;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  flex-shrink: 0; /* prevent shrink for horizontal scroll */
+}
+
+.hover-video {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: auto;
+  user-select: none;
+}
+
+.scroll-buttons {
+    margin: 1%;
+    float: right;
+}
+
+.scroll-buttons button {
+  background: white;
+  border: none;
+  color: rgb(0, 0, 0);
+  font-size: 2rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.scroll-buttons button:hover {
+  background: rgba(28, 231, 131, 0.8);
+}
+
+@media (max-width: 1024px) {
+  .heading-main p {
+    font-size: 40px;
+  }
+
+  .heading-sub p {
+    font-size: 16px;
+  }
+
+  .video-container {
+    width: 30%;
+  }
+}
+
+/* Small screens / tablets */
+@media (max-width: 768px) {
+  .heading-main p {
+    font-size: 32px;
+  }
+
+  .heading-sub p {
+    font-size: 14px;
+  }
+
+  .video-container {
+    width: 45%;
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 480px) {
+  .heading-main p {
+    font-size: 24px;
+  }
+
+  .heading-sub p {
+    font-size: 12px;
+  }
+
+  .video-container {
+    width: 80%;
+  }
+
+  .scroll-buttons {
+    float: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 10px;
+  }
+}

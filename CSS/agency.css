@@ -1,0 +1,126 @@
+.agency-grid {
+  display: flex;
+  padding: 48px 16px;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  background: #fff;
+  flex-wrap: wrap;
+}
+
+.agency-card {
+  width: 280px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 1.5px 10px rgba(0, 0, 0, 0.314);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  min-height: 400px;
+  margin-bottom: 20px;
+}
+
+.agency-banner {
+  background: #1a1a1a;
+  height: 190px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.agency-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.agency-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 20px 24px 15px 24px;
+}
+
+.agency-logo {
+  background: #f5f5f5;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.agency-logo img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+.agency-title {
+  font-size: 1.23rem;
+  font-weight: 600;
+  color: #171717;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  letter-spacing: 0.02em;
+}
+
+.badge {
+  font-size: 0.79rem;
+  padding: 2px 8px;
+  background: #222;
+  color: #fff;
+  border-radius: 8px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+.agency-info {
+  padding: 17px 24px 24px 24px;
+  font-size: 1.04rem;
+  color: #252525;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  font-weight: 400;
+}
+.agency-info strong {
+  color: #737373;
+  font-weight: 500;
+  min-width: 76px;
+  display: inline-block;
+}
+
+/* Responsive: two cards per row on tablets */
+@media (max-width: 960px) {
+  .agency-grid {
+    gap: 22px;
+    padding: 32px 8px;
+  }
+  .agency-card {
+    width: 44vw;
+    min-width: 260px;
+    max-width: 100%;
+  }
+}
+
+/* Responsive: stack vertically on mobile */
+@media (max-width: 720px) {
+  .agency-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding: 16px 0;
+  }
+  .agency-card {
+    width: 94vw;
+    min-width: 0;
+  }
+  .agency-header, .agency-info {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .agency-banner {
+    height: 130px;
+  }
+}
