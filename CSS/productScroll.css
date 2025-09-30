@@ -1,136 +1,170 @@
-.scroll-container {
-  background: #000;
-  overflow-x: hidden;
-  overflow-y: hidden;
-}
+  .scroll-container {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
 
-.horizontal-wrapper {
-  position: relative;
-  height: 100vh;
-  overflow: visible;
-}
-
-.horizontal-container {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  height: 100vh;
-  z-index: 10;
-  padding-left: 209vh;
-  will-change: transform;
-}
-
-.panel {
-  width: 100vw;
-  height: 100vh;
-  flex-shrink: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-}
-
-/* First panel fixed for desktop/tablet */
-.panel.black {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 5;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 4rem;
-  box-sizing: border-box;
-  font-size: 4rem;
-  background: #000;
-}
-
-.green {
-  background: green;
-}
-
-.blue {
-  background: blue;
-}
-
-.orange {
-  background: orange;
-}
-
-
-@media screen and (max-width: 1024px) {
   .horizontal-wrapper {
     position: relative;
-    height: 100vh;
     overflow: visible;
   }
 
   .horizontal-container {
-    position: relative;
     display: flex;
-    flex-direction: row;
-    height: 100vh;
-    width: 120vh;
-    z-index: 10;
-    padding-left: 86vh;
-    will-change: transform;
+    position: relative;
+    z-index: 1;
+    /* above black panel */
   }
-}
 
-/* --- Mobile fallback --- */
-@media screen and (max-width: 768px) {
-  /* .scroll-container {
-    height: 0;
-    overflow-y: visible;
+  .horizontal-container .panel {
+    flex: 0 0 100vw;
+    height: 100vh;
+    display: flex;
+    color: white;
+    font-size: 3rem;
+    margin: 1% 0;
+  }
+
+  /* Panel Colors */
+  .panel.black {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+    /* behind other panels */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 4rem;
+    box-sizing: border-box;
+    font-size: 4rem;
+    background: #000;
+    color: #fff;
+  }
+
+
+  /* .scroll-img{
+    width: 20%;
+    height: 20%;
+    justify-content: center;
+    align-items: center;
   } */
 
-  .horizontal-container {
-    flex-direction: column;
-    width: 100vh;
-    padding-left: 0;
-  }
-
-  .panel.black {
+  .green {
     position: relative;
-    font-size: 3rem;
+    background-image: url('../assets/flowers.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
   }
 
-  .panel {
-    height: 100vh;
+  .green::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.367);
+    pointer-events: none;
+    z-index: 1;
   }
 
-  .scroll-img {
-    width: 70%;
-    height: auto;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  /* .scroll-container {
-    height: 0;
-    overflow-y: visible;
-  } */
-
-  .horizontal-container {
-    flex-direction: column;
-    width: 100vh;
-    padding-left: 0;
-    padding-top: 50px;
-  }
-
-  .panel.black {
+  .green>* {
     position: relative;
+    z-index: 2;
+    /* content above overlay */
+  }
+
+  .panels-contentz {
+    display: flex;
+    gap: 20rem;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .panel-contentz-head {
+    padding: 4% 0 0% 5%;
+    height: fit-content;
+  }
+
+  .panel-contentz-head p {
     font-size: 3rem;
+    padding: 0;
+    margin: 0;
+    font-weight: 600;
+    color: grey;
   }
 
-  .panel {
-    height: 100vh;
+  .panel-contentz-head h3 {
+    font-size: 3rem;
+    padding: 0;
+    margin: 0;
   }
 
-  .scroll-img {
-    width: 70%;
-    height: auto;
+  .panel-contentz-body {
+    display: flex;
+    padding: 1% 0 5% 5%;
+    gap: 3rem;
   }
-}
+
+  .panel-contentz-b1 h3 {
+    padding: 0;
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 900;
+  }
+
+  .panel-contentz-b1 p {
+    padding: .4rem;
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 500;
+    width: 80%;
+  }
+
+
+  .blue {
+    position: relative;
+    background-image: url('../assets/flowers.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .orange {
+    position: relative;
+    background-image: url('../assets/peopleGarden.avif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  /* Mobile / Tablet fallback */
+  @media screen and (max-width: 1200px) {
+    .horizontal-container {
+      display: block !important;
+      width: 100vw !important;
+      z-index: 10;
+    }
+
+    .panel {
+      width: 100vw !important;
+      height: 100vh !important;
+    }
+
+    .panel.black {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw !important;
+      /* full width */
+      height: 100vh;
+      font-size: 2rem;
+      padding: 2rem;
+    }
+
+    .scroll-img {
+      width: 50%;
+      height: auto;
+    }
+  }

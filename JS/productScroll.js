@@ -1,132 +1,104 @@
-window.addEventListener('load', () => {
+window.addEventListener("load", () => {
   gsap.registerPlugin(ScrollTrigger);
-
-  const panels = gsap.utils.toArray(".panel");
 
   function getViewportWidth() {
     return Math.max(window.innerWidth, document.documentElement.clientWidth);
   }
 
-  // --- Common Functions ---
-  function updateWidth() {
-    const container = document.querySelector('.horizontal-container');
-    const panelEls = document.querySelectorAll('.panel');
-    const vw = getViewportWidth();
-    container.style.width = `${panelEls.length * vw}px`;
-    panelEls.forEach(panel => {
-      panel.style.width = `${vw}px`;
-    });
-  }
-
-  function updateScrollContainerHeight() {
-    const scrollContainer = document.querySelector('.scroll-container');
-    const panelEls = document.querySelectorAll('.panel');
-    const vw = getViewportWidth();
-    const totalHeight = (panelEls.length - 1) * vw + window.innerHeight * 0.8;
-    scrollContainer.style.height = `${totalHeight}px`;
-  }
-
-  function updateScrollContainerHeightMobile() {
-    const scrollContainer = document.querySelector('.scroll-container');
-    const panelEls = document.querySelectorAll('.panel');
-    const totalHeight = panelEls.length * window.innerHeight;
-    scrollContainer.style.height = `${totalHeight}px`;
-  }
-
-  // --- Desktop ---
+  // Desktop horizontal scroll
   function setupDesktop() {
-    updateWidth();
-    updateScrollContainerHeight();
+    const panels = gsap.utils.toArray(".horizontal-container .panel");
+    const container = document.querySelector(".horizontal-container");
+    const vw = getViewportWidth();
 
-    gsap.to(".horizontal-container", {
-      x: () => - (panels.length - 1) * getViewportWidth(),
+    // Set container width
+    container.style.width = `${panels.length * vw}px`;
+    panels.forEach((panel) => (panel.style.width = `${vw}px`));
+
+    // Scroll container height
+    const scrollContainer = document.querySelector(".scroll-container");
+    const totalHeight = panels.length * vw + window.innerHeight;
+    scrollContainer.style.height = `${totalHeight}px`;
+
+    // Start panels off-screen right
+    gsap.set(container, { x: vw });
+
+    // Animate panels left on scroll
+    gsap.to(container, {
+      x: () => -(panels.length - 1) * vw,
       ease: "none",
       scrollTrigger: {
         trigger: ".scroll-container",
         start: "top top",
-        end: () => "+=" + ((panels.length - 2) * getViewportWidth() + window.innerHeight * 1.91),
+        end: () => "+=" + panels.length * vw,
         scrub: true,
         pin: ".horizontal-wrapper",
         pinSpacing: true,
         anticipatePin: 1,
-        snap: 1 / (panels.length - 1),
-        markers: true
-      }
+      },
     });
   }
 
-  // --- Tablet (similar to desktop, but you can tune end/snap) ---
-  function setupTablet() {
-    updateWidth();
-    updateScrollContainerHeight();
+  // Tablet/Mobile fallback (vertical scroll)
+  function setupVertical() {
+    const container = document.querySelector(".horizontal-container");
+    const panels = document.querySelectorAll(".panel");
+    const scrollContainer = document.querySelector(".scroll-container");
+    const vw = window.innerWidth;
+    const vh = window.innerHeight;
 
-    gsap.to(".horizontal-container", {
-      x: () => - (panels.length - 1) * getViewportWidth(),
+    container.style.width = "100vw";
+    container.style.display = "block";
+    container.style.transform = "none";
+    container.style.position = "relative";
+
+    panels.forEach((panel) => {
+      panel.style.width = vw + "px";
+      panel.style.height = vh + "px";
+      panel.style.position = panel.classList.contains("black")
+        ? "fixed"
+        : "relative";
+      panel.style.top = panel.classList.contains("black") ? "0" : "auto";
+      panel.style.left = panel.classList.contains("black") ? "0" : "auto";
+      panel.style.transform = "none";
+      panel.style.position = "relative";
+      panel.style.zIndex = panel.classList.contains("black") ? 10 : 1; // black panel on top
+    });
+
+    scrollContainer.style.height = vh * panels.length + "px";
+
+    gsap.to(container, {
+      y: () => -vh * (panels.length - 1),
       ease: "none",
       scrollTrigger: {
         trigger: ".scroll-container",
         start: "top top",
-        end: () => "+=" + ((panels.length - 1) * getViewportWidth()), // shorter end
+        end: () => "+=" + vh * (panels.length - 1),
         scrub: true,
         pin: ".horizontal-wrapper",
         pinSpacing: true,
-        snap: 1 / (panels.length - 1.5),
-        markers: true
-      }
+        anticipatePin: 1,
+      },
     });
   }
 
-  // --- Mobile ---
-  function setupMobile() {
-    const container = document.querySelector('.horizontal-container');
-    container.style.width = ''; // reset desktop width
-    document.querySelectorAll('.panel').forEach(p => p.style.width = '100vw');
-
-    updateScrollContainerHeightMobile();
-
-    gsap.to(".horizontal-container", {
-      y: () => - (panels.length - 1) * window.innerHeight,
-      ease: "none",
-      scrollTrigger: {
-        trigger: ".scroll-container",
-        start: "top top",
-        end: "+=" + ((panels.length - 2)  * getViewportWidth() + window.innerHeight * 1.91),
-        scrub: true,
-        pin: ".horizontal-wrapper",
-        pinSpacing: true,
-        snap: 1 / (panels.length - 0.8),
-        markers: true
-      }
-    });
-  }
-
-  // --- Init ---
+  // Init
   function init() {
-    ScrollTrigger.getAll().forEach(t => t.kill());
-
-    const container = document.querySelector('.horizontal-container');
-    container.style.transform = '';
-    document.querySelectorAll('.panel').forEach(p => p.style.transform = '');
-
-    if (window.innerWidth <= 768) {
-      setupMobile();
-    } else if (window.innerWidth <= 1200) {
-      setupTablet();
-    } else {
+    ScrollTrigger.getAll().forEach((t) => t.kill());
+    if (window.innerWidth >= 1200) {
       setupDesktop();
+    } else {
+      setupVertical();
     }
-
     ScrollTrigger.refresh();
   }
 
   init();
 
-  // --- Resize handler ---
+  // Resize
   let resizeTimeout;
-  window.addEventListener('resize', () => {
+  window.addEventListener("resize", () => {
     clearTimeout(resizeTimeout);
-    resizeTimeout = setTimeout(() => {
-      init();
-    }, 120);
+    resizeTimeout = setTimeout(() => init(), 150);
   });
 });
