@@ -164,6 +164,29 @@
   color: #1ce783;
 }
 
+/* From Uiverse.io by sekaiking */ 
+.nav-btn {
+  background-color: rgb(200, 191, 191);
+  color: black;
+  border-radius: 10em;
+  font-size: 17px;
+  font-weight: 600;
+  padding: .5em 1em;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid black;
+  box-shadow: 0 0 0 0 black;
+}
+
+.nav-btn:hover {
+  transform: translateY(-4px) translateX(-2px);
+  box-shadow: 2px 5px 0 0 rgb(255, 255, 255);
+}
+
+.nav-btn :active {
+  transform: translateY(2px) translateX(1px);
+  box-shadow: 0 0 0 0 rgb(255, 255, 255);
+}
 
 
 /* Responsive styles for tablets/medium screens */

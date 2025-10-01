@@ -1,15 +1,19 @@
 const menuToggle = document.querySelector(".menu-toggle");
 const mobileMenu = document.getElementById("mobileMenu");
-const closeMenu = document.querySelector(".close-menu");
+const menuIcon = menuToggle.querySelector("i");
 
 menuToggle.addEventListener("click", () => {
   mobileMenu.classList.toggle("active");
-  menuToggle.classList.toggle("active");
-  document.body.style.overflow = mobileMenu.classList.contains("active") ? "hidden" : "";
-});
+  document.body.style.overflow = mobileMenu.classList.contains("active")
+    ? "hidden"
+    : "";
 
-closeMenu.addEventListener("click", () => {
-  mobileMenu.classList.remove("active");
-  menuToggle.classList.remove("active");
-  document.body.style.overflow = "";
+  // Toggle icon
+  if (mobileMenu.classList.contains("active")) {
+    menuIcon.classList.remove("fa-bars");
+    menuIcon.classList.add("fa-times");
+  } else {
+    menuIcon.classList.remove("fa-times");
+    menuIcon.classList.add("fa-bars");
+  }
 });

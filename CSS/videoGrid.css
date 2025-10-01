@@ -118,7 +118,7 @@
 }
 
 .scroll-buttons button:hover {
-  background: rgba(28, 231, 131, 0.8);
+  background: grey;
 }
 
 @media (max-width: 1024px) {
