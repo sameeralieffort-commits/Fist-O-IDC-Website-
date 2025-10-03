@@ -7,7 +7,7 @@
   left: 0;
   right: 0;
   height: 70px;
-  background: #000;
+  background: #000000;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -33,7 +33,7 @@
 .navbar-right {
   display: flex;
   align-items: center;
-  gap: 32px;
+  gap: 15px;
   margin-left: 0; /* this pushes the right container all the way right */
 }
 
@@ -165,27 +165,35 @@
 }
 
 /* From Uiverse.io by sekaiking */ 
-.nav-btn {
-  background-color: rgb(200, 191, 191);
-  color: black;
-  border-radius: 10em;
-  font-size: 17px;
-  font-weight: 600;
-  padding: .5em 1em;
+.button-float {
+  position: relative;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 2px solid white;
+  border-radius: 1000px;
+  padding: 12px 28px;
+  display: inline-block;
+  box-shadow: 0 2px 5px 0 rgba(3,6,26,0.15);
+  transition: .5s all ease-in-out;
+  animation: float 1.5s linear alternate infinite;
+}
+
+.button-float:hover {
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  border: 1px solid black;
-  box-shadow: 0 0 0 0 black;
+  background: white;
+  color: #1F4141;
+  animation: none;
 }
 
-.nav-btn:hover {
-  transform: translateY(-4px) translateX(-2px);
-  box-shadow: 2px 5px 0 0 rgb(255, 255, 255);
-}
-
-.nav-btn :active {
-  transform: translateY(2px) translateX(1px);
-  box-shadow: 0 0 0 0 rgb(255, 255, 255);
+@keyframes float {
+  50% {
+    transform: translateY(8px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
 }
 
 

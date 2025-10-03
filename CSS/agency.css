@@ -1,19 +1,41 @@
+.acency-content{
+  width: 100%;
+  height: auto;
+  background-color: #ffffff;
+}
+
+.agency-title{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.agency-title h2{
+  font-size: 3rem;
+}
+
+/* Outer wrapper just for centering */
 .agency-grid {
   display: flex;
-  padding: 48px 16px;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: flex-start;
-  background: #fff;
-  flex-wrap: wrap;
-  gap: 28px;
+  padding: 48px 0px;
+  width: 100%;
 }
 
 
 
+/* Main responsive grid */
+.agency-bg {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 28px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Individual card */
 .agency-card {
-  flex: 1 1 calc(25% - 28px);
-  max-width: calc(25% - 28px);
-  width: 280px;
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 1.5px 10px rgba(0, 0, 0, 0.314);
@@ -21,23 +43,43 @@
   flex-direction: column;
   overflow: hidden;
   min-height: 360px;
-  margin-bottom: 20px;
+  transition: transform 0.3s ease;
 }
 
+.agency-card:hover {
+  transform: translateY(-6px);
+}
+
+/* Banner (image area) */
 .agency-banner {
-  background: #1a1a1a;
+  background: rgba(128, 128, 128, 0.2);
   height: 190px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.agency-banner img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.agency-banner-p {
+  background: rgba(128, 128, 128, 0.2);
+  height: 190px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+.agency-banner-p img {
+  width: 90%;
+  height: 90%;
+  object-fit:fill;
+}
+
+.agency-banner img {
+  width: 50%;
+  height: 90%;
+  object-fit:fill;
+}
+
+/* Card header */
 .agency-header {
   display: flex;
   align-items: center;
@@ -82,6 +124,7 @@
   letter-spacing: 0.03em;
 }
 
+/* Card body/info */
 .agency-info {
   padding: 0px 24px 24px 24px;
   font-size: 1.04rem;
@@ -90,6 +133,7 @@
   flex-direction: column;
   gap: 18px;
   font-weight: 400;
+  flex-grow: 1; /* ensures even stretch */
 }
 
 .agency-info strong {
@@ -99,14 +143,15 @@
   display: inline-block;
 }
 
-
+/* View more link */
 .view-a {
   display: flex;
   justify-content: center;
   text-decoration: none;
+  margin-bottom: 16px;
 }
 
-/* From Uiverse.io by catraco */
+/* Button style */
 .btn {
   --color: #d6d6d6;
   position: relative;
@@ -116,7 +161,6 @@
   transition: all .5s;
   border: none;
   background-color: transparent;
-
 }
 
 .btn div {
@@ -143,11 +187,10 @@
   opacity: 0.2;
 }
 
-
 .btn:hover {
   cursor: pointer;
   filter: brightness(1.2);
-  transform: scale(0.9);
+  transform: scale(0.95);
 }
 
 .btn:hover::before {
@@ -172,41 +215,41 @@
   filter: brightness(1.4);
 }
 
-/* Responsive: two cards per row on tablets */
+/* --- Responsive --- */
+
+/* Tablet */
 @media (max-width: 960px) {
   .agency-grid {
-    gap: 22px;
     padding: 32px 8px;
   }
-
-  .agency-card {
-    width: 44vw;
-    min-width: 260px;
-    max-width: 100%;
+  .agency-bg {
+    max-width: 700px;
+  }
+  .agency-banner {
+    height: 160px;
   }
 }
 
-/* Responsive: stack vertically on mobile */
+/* Mobile */
 @media (max-width: 720px) {
   .agency-grid {
-    flex-direction: column;
-    align-items: center;
-    gap: 24px;
     padding: 16px 0;
   }
-
-  .agency-card {
-    width: 94vw;
-    min-width: 0;
+  .agency-bg {
+    max-width: 350px;
   }
-
+  .agency-banner {
+    height: 140px;
+  }
   .agency-header,
   .agency-info {
     padding-left: 12px;
     padding-right: 12px;
   }
+}
 
-  .agency-banner {
-    height: 130px;
+@media (max-width: 400px) {
+  .agency-bg {
+    max-width: 250px;
   }
 }

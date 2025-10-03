@@ -1,0 +1,30 @@
+.frame-content {
+    margin: 2%;
+    position: relative;
+}
+
+.frame-img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.frame-img img {
+    width: 80%;
+    height: auto;
+}
+
+.frame-btn{
+    position: absolute;
+    left: 45%;
+    top: 65%;
+}
+
+.frame-btn button{
+    color: white;
+    background: rgb(174, 51, 51);
+    padding: 10px 15px;
+    border-radius: 50px;
+    border: 0;
+    cursor: pointer;
+}

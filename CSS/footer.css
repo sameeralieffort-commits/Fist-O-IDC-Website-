@@ -1,6 +1,8 @@
         .footer {
             width: 100%;
-      
+            background-color: rgb(0, 0, 0);
+            position: relative;
+            z-index: 999;
         }
 
         .footer-top {
@@ -89,30 +91,46 @@
             font-size: 16px;
             font-weight: 400;
             margin: 1% 0;
-            padding: 20px 0 0 0;
+            padding: 10px 0 0 0;
             border-top: 1px solid #ccc;
             color: #ddd;
             text-align: center;
+            position: relative;
+            display: flex; 
         }
 
-        .copyright a {
+        .copy-m{
+            padding-left: 15%;
+        }
+
+        .copy-m a {
             color: #fff;
             text-decoration: none;
         }
 
-        .copyright a:hover {
+        .copy-m a:hover {
             text-decoration: underline;
         }
 
-        .copyright img {
+        /* .copyright img {
             width: 5%;
             height: auto;
             border-style: none;
+        } */
+
+        .designed-by {
+            font-size: 16px;
+            font-weight: 400;
         }
 
-        .designed-by{
-            position: absolute;
-            left: 1%;
+
+        .designed-by a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .designed-by a:hover {
+            text-decoration: underline;
         }
 
         @media (max-width: 1024px) {
@@ -123,6 +141,28 @@
 
             .logo-text {
                 font-size: 48px;
+            }
+
+            .copyright {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+            }
+
+
+            .copy-m {
+                text-align: center;
+                font-size: 18px;
+            }
+
+            .copy-m a:hover {
+                text-decoration: underline;
+            }
+
+            .designed-by {
+                position: relative;
+                font-size: 18px;
+
             }
         }
 
@@ -148,5 +188,14 @@
             .copyright {
                 font-size: 12px;
                 padding-bottom: 2%;
+                margin: 3% 0;
+            }
+
+            .copy-m {
+                font-size: 11px;
+            }
+
+            .designed-by {
+                font-size: 11px;
             }
         }

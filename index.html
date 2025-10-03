@@ -1,697 +1,498 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fist-O IDC Website</title>
-    <link rel="icon" type="image/png" href="./assets/Fisto logo.png" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fist-O IDC Website</title>
+  <link rel="icon" type="image/png" href="./assets/Fisto logo.png" />
 
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="./CSS/navbar.css" />
-    <link rel="stylesheet" href="./CSS/productScroll.css" />
-    <link rel="stylesheet" href="./CSS/agency.css" />
-    <link rel="stylesheet" href="./CSS/videoGrid.css" />
-    <link rel="stylesheet" href="./CSS/pappers.css" />
-    <link rel="stylesheet" href="./CSS/footer.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="./CSS/navbar.css" />
+  <link rel="stylesheet" href="./CSS/productScroll.css" />
+  <link rel="stylesheet" href="./CSS/agency.css" />
+  <link rel="stylesheet" href="./CSS/frame.css">
+  <link rel="stylesheet" href="./CSS/videoGrid.css" />
+  <link rel="stylesheet" href="./CSS/pappers.css" />
+  <link rel="stylesheet" href="./CSS/rotating.css">
+  <link rel="stylesheet" href="./CSS/footer.css" />
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-  </head>
-  <body>
-    <!-- ****************************************** NAVBAR START *********************************************** -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
-    <nav class="navbar">
-      <div class="navbar-left">
-        <a href="inspo.html" class="nav-link">Home</a>
-        <a href="pricing.html" class="nav-link">Our Works</a>
-        <a href="whats.html" class="nav-link">Portfolio</a>
-        <button class="nav-btn">Book a Demo</button>
-      </div>
-      <div class="navbar-center">
-        <a href="https://www.fist-o.com" class="logo">
-          <img src="./assets/Fisto logo - white.png" alt="" class="logo" />
-        </a>
-      </div>
-      <div class="navbar-right">
-        <a
-          href="https://www.facebook.com/profile.php?id=100084631685222"
-          target="_blank"
-          class="social"
-          ><i class="fab fa-facebook-f"></i
-        ></a>
-        <a
-          href="https://www.instagram.com/fisto_ar?igsh=OWlzNm4ydGV6b2di"
-          target="_blank"
-          class="social"
-          ><i class="fab fa-instagram"></i
-        ></a>
-        <a
-          href="https://www.linkedin.com/company/82545817"
-          target="_blank"
-          class="social"
-          ><i class="fab fa-linkedin-in"></i
-        ></a>
-        <a
-          href="https://www.youtube.com/@fist-oar7424"
-          target="_blank"
-          class="social"
-          ><i class="fab fa-youtube"></i
-        ></a>
-      </div>
-      <button class="menu-toggle" aria-label="Open menu">
-        <i class="fas fa-bars"></i>
-      </button>
-    </nav>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
 
-    <div class="mobile-menu" id="mobileMenu">
-      <div class="mobile-menu-content">
-        <a href="inspo.html" class="mobile-nav-link">Inspo</a>
-        <a href="pricing.html" class="mobile-nav-link">Pricing</a>
-        <a href="whats.html" class="mobile-nav-link">What's New</a>
-        <a href="mission.html" class="mobile-nav-link">Mission</a>
-        <div class="mobile-social-icons">
-          <a
-            href="https://www.facebook.com/profile.php?id=100084631685222"
-            target="_blank"
-            class="mobile-social"
-            ><i class="fab fa-facebook-f"></i
-          ></a>
-          <a
-            href="https://www.instagram.com/fisto_ar?igsh=OWlzNm4ydGV6b2di"
-            target="_blank"
-            class="mobile-social"
-            ><i class="fab fa-instagram"></i
-          ></a>
-          <a
-            href="https://www.linkedin.com/company/82545817"
-            target="_blank"
-            class="mobile-social"
-            ><i class="fab fa-linkedin-in"></i
-          ></a>
-          <a
-            href="https://www.youtube.com/@fist-oar7424"
-            target="_blank"
-            class="mobile-social"
-            ><i class="fab fa-youtube"></i
-          ></a>
-        </div>
+<body>
+  <!-- ****************************************** NAVBAR START *********************************************** -->
+
+  <nav class="navbar">
+    <div class="navbar-left">
+      <a href="inspo.html" class="nav-link">Home</a>
+      <a href="#our-work" class="nav-link">Our Works</a>
+      <a href="whats.html" class="nav-link">Portfolio</a>
+      <a href="#" class="button-float">Book a Demo</a>
+    </div>
+    <div class="navbar-center">
+      <a href="https://www.fist-o.com" class="logo">
+        <img src="./assets/Fisto logo - white.png" alt="" class="logo" />
+      </a>
+    </div>
+    <div class="navbar-right">
+      <a href="https://www.facebook.com/profile.php?id=100084631685222" target="_blank" class="social"><i
+          class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/fisto_ar?igsh=OWlzNm4ydGV6b2di" target="_blank" class="social"><i
+          class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/company/82545817" target="_blank" class="social"><i
+          class="fab fa-linkedin-in"></i></a>
+      <a href="https://www.youtube.com/@fist-oar7424" target="_blank" class="social"><i class="fab fa-youtube"></i></a>
+    </div>
+    <button class="menu-toggle" aria-label="Open menu">
+      <i class="fas fa-bars"></i>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-content">
+      <a href="inspo.html" class="mobile-nav-link">Home</a>
+      <a hhref="#our-work" class="mobile-nav-link">Our Works</a>
+      <a href="whats.html" class="mobile-nav-link">Portfolio</a>
+      <button class="nav-btn">Book a Demo</button>
+      <div class="mobile-social-icons">
+        <a href="https://www.facebook.com/profile.php?id=100084631685222" target="_blank" class="mobile-social"><i
+            class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/fisto_ar?igsh=OWlzNm4ydGV6b2di" target="_blank" class="mobile-social"><i
+            class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/company/82545817" target="_blank" class="mobile-social"><i
+            class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.youtube.com/@fist-oar7424" target="_blank" class="mobile-social"><i
+            class="fab fa-youtube"></i></a>
       </div>
     </div>
+  </div>
 
-    <!-- ************************************************** NAVBAR END ************************************************* -->
+  <!-- ************************************************** NAVBAR END ************************************************* -->
 
-    <!-- ************************************************** ANIMATED START ************************************************* -->
-    <div class="homescroll"></div>
-    <!-- ************************************************** ANIMATED START ************************************************* -->
+  <!-- ************************************************** ANIMATED START ************************************************* -->
+  <div class="homescroll"></div>
+  <!-- ************************************************** ANIMATED START ************************************************* -->
 
-    <!-- ************************************************** GSAP HORIZONTAL SLIDER START************************************************* -->
-    <div class="scroll-container">
-      <div class="horizontal-wrapper">
-        <section class="panel black" id="stay">
-          Your Creative <br />
-          Process is changing <br />
-          take break and control
-        </section>
-        <div class="horizontal-container">
-          <section class="panel green">
-            <!-- <div class="panel-green-img">
+  <!-- ************************************************** GSAP HORIZONTAL SLIDER START************************************************* -->
+  <div class="scroll-container">
+    <div class="horizontal-wrapper">
+      <section class="panel black" id="stay">
+        Your Creative <br />
+        Process is changing <br />
+        take break and control
+      </section>
+      <div class="horizontal-container">
+        <section class="panel green">
+          <!-- <div class="panel-green-img">
               <img src="./assets/Fisto logo.png" alt="" class="scroll-img"/>
             </div> -->
-            <div class="panels-contentz">
-              <div class="panel-contentz-head">
-                <p>01</p>
-                <h3>Genarate</h3>
+          <div class="panels-contentz">
+            <div class="panel-contentz-head">
+              <p>01</p>
+              <h3>Genarate</h3>
+            </div>
+            <div class="panel-contentz-body">
+              <div class="panel-contentz-b1">
+                <img src="./assets/abc.svg" alt="" />
+                <h3>Composer</h3>
+                <p>
+                  Use natural language to describe exactly what you imagine
+                </p>
               </div>
-              <div class="panel-contentz-body">
-                <div class="panel-contentz-b1">
-                  <img src="./assets/abc.svg" alt="" />
-                  <h3>Composer</h3>
-                  <p>
-                    Use natural language to describe exactly what you imagine
-                  </p>
-                </div>
-                <div class="panel-contentz-b1" id="panel-contentz-b3">
-                  <img src="./assets/box.svg" alt="" />
-                  <h3>Composer</h3>
-                  <p>
-                    Use natural language to describe exactly what you imagine
-                  </p>
-                </div>
-                <div class="panel-contentz-b1">
-                  <img src="./assets/gallery.svg" alt="" />
-                  <h3>Composer</h3>
-                  <p>
-                    Use natural language to describe exactly what you imagine
-                  </p>
-                </div>
+              <div class="panel-contentz-b1" id="panel-contentz-b3">
+                <img src="./assets/box.svg" alt="" />
+                <h3>Composer</h3>
+                <p>
+                  Use natural language to describe exactly what you imagine
+                </p>
+              </div>
+              <div class="panel-contentz-b1">
+                <img src="./assets/gallery.svg" alt="" />
+                <h3>Composer</h3>
+                <p>
+                  Use natural language to describe exactly what you imagine
+                </p>
               </div>
             </div>
-          </section>
-          <section class="panel blue">
-            <div class="panels-contentz">
-              <div class="panel-contentz-head">
-                <p>02</p>
-                <h3>Genarate</h3>
+          </div>
+        </section>
+        <section class="panel blue">
+          <div class="panels-contentz">
+            <div class="panel-contentz-head">
+              <p>02</p>
+              <h3>Genarate</h3>
+            </div>
+            <div class="panel-contentz-body">
+              <div class="panel-contentz-b1">
+                <img src="./assets/abc.svg" alt="" />
+                <h3>Composer</h3>
+                <p>
+                  Use natural language to describe exactly what you imagine
+                </p>
               </div>
-              <div class="panel-contentz-body">
-                <div class="panel-contentz-b1">
-                  <img src="./assets/abc.svg" alt="" />
-                  <h3>Composer</h3>
-                  <p>
-                    Use natural language to describe exactly what you imagine
-                  </p>
-                </div>
-                <div class="panel-contentz-b1">
-                  <img src="./assets/box.svg" alt="" />
-                  <h3>Composer</h3>
-                  <p>
-                    Use natural language to describe exactly what you imagine
-                  </p>
-                </div>
-                <div class="panel-contentz-b1" id="panel-contentz-b3">
-                  <img src="./assets/gallery.svg" alt="" />
-                  <h3>Composer</h3>
-                  <p>
-                    Use natural language to describe exactly what you imagine
-                  </p>
-                </div>
+              <div class="panel-contentz-b1">
+                <img src="./assets/box.svg" alt="" />
+                <h3>Composer</h3>
+                <p>
+                  Use natural language to describe exactly what you imagine
+                </p>
+              </div>
+              <div class="panel-contentz-b1" id="panel-contentz-b3">
+                <img src="./assets/gallery.svg" alt="" />
+                <h3>Composer</h3>
+                <p>
+                  Use natural language to describe exactly what you imagine
+                </p>
               </div>
             </div>
-          </section>
-          <section class="panel orange">
-            <div class="panels-contentz">
-              <div class="panel-contentz-head">
-                <p>03</p>
-                <h3>Genarate</h3>
+          </div>
+        </section>
+        <section class="panel orange">
+          <div class="panels-contentz">
+            <div class="panel-contentz-head">
+              <p>03</p>
+              <h3>Genarate</h3>
+            </div>
+            <div class="panel-contentz-body">
+              <div class="panel-contentz-b1">
+                <img src="./assets/abc.svg" alt="" />
+                <h3>Composer</h3>
+                <p>
+                  Use natural language to describe exactly what you imagine
+                </p>
               </div>
-              <div class="panel-contentz-body">
-                <div class="panel-contentz-b1">
-                  <img src="./assets/abc.svg" alt="" />
-                  <h3>Composer</h3>
-                  <p>
-                    Use natural language to describe exactly what you imagine
-                  </p>
-                </div>
-                <div class="panel-contentz-b1">
-                  <img src="./assets/box.svg" alt="" />
-                  <h3>Composer</h3>
-                  <p>
-                    Use natural language to describe exactly what you imagine
-                  </p>
-                </div>
-                <div class="panel-contentz-b1" id="panel-contentz-b3">
-                  <img src="./assets/gallery.svg" alt="" />
-                  <h3>Composer</h3>
-                  <p>
-                    Use natural language to describe exactly what you imagine
-                  </p>
-                </div>
+              <div class="panel-contentz-b1">
+                <img src="./assets/box.svg" alt="" />
+                <h3>Composer</h3>
+                <p>
+                  Use natural language to describe exactly what you imagine
+                </p>
+              </div>
+              <div class="panel-contentz-b1" id="panel-contentz-b3">
+                <img src="./assets/gallery.svg" alt="" />
+                <h3>Composer</h3>
+                <p>
+                  Use natural language to describe exactly what you imagine
+                </p>
               </div>
             </div>
-          </section>
-        </div>
+          </div>
+        </section>
       </div>
     </div>
+  </div>
 
-    <!-- ************************************************** GSAP HORIZONTAL SLIDER END ************************************************* -->
+  <!-- ************************************************** GSAP HORIZONTAL SLIDER END ************************************************* -->
 
-    <!-- ************************************************** AGENCY GRID ************************************************* -->
+  <!-- ************************************************** AGENCY GRID ************************************************* -->
+
+  <div id="our-work" class="acency-content">
+
+    <div class="agency-title">
+      <h2>Our Work</h2>
+    </div>
     <div class="agency-grid">
-      <div class="agency-card">
-        <div class="agency-banner">
-          <img src="./assets/Fist-O_IDC.png" alt="Locomotive Banner" />
-        </div>
-        <div class="agency-header">
-          <div class="agency-logo">
-            <img src="./assets/Fisto logo.png" alt="Locomotive" />
-          </div>
-          <div class="agency-title">Fist-O IDC</div>
-        </div>
-        <div class="agency-info">
-          <div><strong>Location</strong> Coimbatore</div>
-        </div>
-        <a href="https://www.fist-o.com/Fistotech_IDC/index.html" target="_blank" class="view-a">
-          <button class="btn">
-            <div>view</div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="30px"
-              height="25px"
-              viewBox="0 0 24 24"
-              fill="none"
-            >
-              <path
-                d="M11.6801 14.62L14.2401 12.06L11.6801 9.5"
-                stroke="grey"
-                stroke-width="2"
-                stroke-miterlimit="10"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></path>
-              <path
-                d="M4 12.0601H14.17"
-                stroke="grey"
-                stroke-width="3"
-                stroke-miterlimit="10"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></path>
-            </svg>
-          </button>
-        </a>
-      </div>
 
-      <div class="agency-card">
-        <div class="agency-banner">
-          <img src="./assets/Evolve_IDC.png" alt="Immersive Garden Banner" />
-        </div>
-        <div class="agency-header">
-          <div class="agency-logo">
-            <img src="./assets/Fisto logo.png" alt="Immersive Garden" />
-          </div>
-          <div class="agency-title">Akira controls IDC</div>
-        </div>
-        <div class="agency-info">
-          <div><strong>Location</strong> France</div>
-        </div>
-        <a href="https://www.akiracontrols.in/DigitalCatalogue/index.html" target="_blank" class="view-a">
-          <button class="btn">
-            <div>view</div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="30px"
-              height="25px"
-              viewBox="0 0 24 24"
-              fill="none"
-            >
-              <path
-                d="M11.6801 14.62L14.2401 12.06L11.6801 9.5"
-                stroke="grey"
-                stroke-width="2"
-                stroke-miterlimit="10"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></path>
-              <path
-                d="M4 12.0601H14.17"
-                stroke="grey"
-                stroke-width="3"
-                stroke-miterlimit="10"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></path>
-            </svg>
-          </button>
-        </a>
-      </div>
+      <div class="agency-bg">
 
-      <div class="agency-card">
-        <div class="agency-banner">
-          <img src="./assets/Niagara_IDC.png" alt="Resn Banner" />
-        </div>
-        <div class="agency-header">
-          <div class="agency-logo">
-            <img src="./assets/Fisto logo.png" alt="Resn" />
+        <div class="agency-card">
+          <div class="agency-banner-p">
+            <img src="./assets/Fist-O_IDC.png" alt="Locomotive Banner" />
           </div>
-          <div class="agency-title">Niagara IDC</div>
+          <div class="agency-header">
+            <div class="agency-logo">
+              <img src="./assets/Fisto logo.png" alt="Locomotive" />
+            </div>
+            <div class="agency-title">Fist-O IDC</div>
+          </div>
+          <div class="agency-info">
+            <div><strong>Location</strong> Coimbatore</div>
+          </div>
+          <a href="https://www.fist-o.com/Fistotech_IDC/index.html" target="_blank" class="view-a">
+            <button class="btn">
+              <div>view</div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="25px" viewBox="0 0 24 24" fill="none">
+                <path d="M11.6801 14.62L14.2401 12.06L11.6801 9.5" stroke="grey" stroke-width="2" stroke-miterlimit="10"
+                  stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M4 12.0601H14.17" stroke="grey" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"
+                  stroke-linejoin="round"></path>
+              </svg>
+            </button>
+          </a>
         </div>
-        <div class="agency-info">
-          <div><strong>Location</strong> New Zealand</div>
-        </div>
-        <a
-          href="https://niagaradigitalcatalogue.s3.ap-south-1.amazonaws.com/index.html" target="_blank" class="view-a"
-        >
-          <button class="btn">
-            <div>view</div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="30px"
-              height="25px"
-              viewBox="0 0 24 24"
-              fill="none"
-            >
-              <path
-                d="M11.6801 14.62L14.2401 12.06L11.6801 9.5"
-                stroke="grey"
-                stroke-width="2"
-                stroke-miterlimit="10"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></path>
-              <path
-                d="M4 12.0601H14.17"
-                stroke="grey"
-                stroke-width="3"
-                stroke-miterlimit="10"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></path>
-            </svg>
-          </button>
-        </a>
-      </div>
 
-      <div class="agency-card">
-        <div class="agency-banner">
-          <img src="./assets/Convey_IDC.png" alt="Monks Banner" />
-        </div>
-        <div class="agency-header">
-          <div class="agency-logo">
-            <img src="./assets/Fisto logo.png" alt="Monks" />
+        <div class="agency-card">
+          <div class="agency-banner-p">
+            <img src="./assets/Akira_IDC.png" alt="Immersive Garden Banner" />
           </div>
-          <div class="agency-title">Conway IDC</div>
+          <div class="agency-header">
+            <div class="agency-logo">
+              <img src="./assets/Fisto logo.png" alt="Immersive Garden" />
+            </div>
+            <div class="agency-title">Akira controls IDC</div>
+          </div>
+          <div class="agency-info">
+            <div><strong>Location</strong> France</div>
+          </div>
+          <a href="https://www.akiracontrols.in/DigitalCatalogue/index.html" target="_blank" class="view-a">
+            <button class="btn">
+              <div>view</div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="25px" viewBox="0 0 24 24" fill="none">
+                <path d="M11.6801 14.62L14.2401 12.06L11.6801 9.5" stroke="grey" stroke-width="2" stroke-miterlimit="10"
+                  stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M4 12.0601H14.17" stroke="grey" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"
+                  stroke-linejoin="round"></path>
+              </svg>
+            </button>
+          </a>
         </div>
-        <div class="agency-info">
-          <div><strong>Location</strong> Netherlands</div>
-        </div>
-        <a
-          href="https://www.conwaywater.com/Bottle_Water_Dispensers_With_UV_Purifier/index.html" target="_blank" class="view-a"
-        >
-          <button class="btn">
-            <div>view</div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="30px"
-              height="25px"
-              viewBox="0 0 24 24"
-              fill="none"
-            >
-              <path
-                d="M11.6801 14.62L14.2401 12.06L11.6801 9.5"
-                stroke="grey"
-                stroke-width="2"
-                stroke-miterlimit="10"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></path>
-              <path
-                d="M4 12.0601H14.17"
-                stroke="grey"
-                stroke-width="3"
-                stroke-miterlimit="10"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></path>
-            </svg>
-          </button>
-        </a>
-      </div>
 
-      <div class="agency-card">
-        <div class="agency-banner">
-          <img src="./assets/Popularwater_IDC.png" alt="Resn Banner" />
-        </div>
-        <div class="agency-header">
-          <div class="agency-logo">
-            <img src="./assets/Fisto logo.png" alt="Resn" />
+        <div class="agency-card">
+          <div class="agency-banner-p">
+            <img src="./assets/Niagara_IDC.png" alt="Resn Banner" />
           </div>
-          <div class="agency-title">Popular water IDC</div>
+          <div class="agency-header">
+            <div class="agency-logo">
+              <img src="./assets/Fisto logo.png" alt="Resn" />
+            </div>
+            <div class="agency-title">Niagara IDC</div>
+          </div>
+          <div class="agency-info">
+            <div><strong>Location</strong> New Zealand</div>
+          </div>
+          <a href="https://niagaradigitalcatalogue.s3.ap-south-1.amazonaws.com/index.html" target="_blank"
+            class="view-a">
+            <button class="btn">
+              <div>view</div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="25px" viewBox="0 0 24 24" fill="none">
+                <path d="M11.6801 14.62L14.2401 12.06L11.6801 9.5" stroke="grey" stroke-width="2" stroke-miterlimit="10"
+                  stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M4 12.0601H14.17" stroke="grey" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"
+                  stroke-linejoin="round"></path>
+              </svg>
+            </button>
+          </a>
         </div>
-        <div class="agency-info">
-          <div><strong>Location</strong> New Zealand</div>
-        </div>
-        <a href="https://www.popularwater.in/DigitalCatalogue/index.html" target="_blank" class="view-a">
-          <button class="btn">
-            <div>view</div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="30px"
-              height="25px"
-              viewBox="0 0 24 24"
-              fill="none"
-            >
-              <path
-                d="M11.6801 14.62L14.2401 12.06L11.6801 9.5"
-                stroke="grey"
-                stroke-width="2"
-                stroke-miterlimit="10"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></path>
-              <path
-                d="M4 12.0601H14.17"
-                stroke="grey"
-                stroke-width="3"
-                stroke-miterlimit="10"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></path>
-            </svg>
-          </button>
-        </a>
-      </div>
 
-      <div class="agency-card">
-        <div class="agency-banner">
-          <img src="./assets/Airlock_IDC.png" alt="Resn Banner" />
-        </div>
-        <div class="agency-header">
-          <div class="agency-logo">
-            <img src="./assets/Fisto logo.png" alt="Resn" />
+        <div class="agency-card">
+          <div class="agency-banner-p">
+            <img src="./assets/Convey_IDC.png" alt="Monks Banner" />
           </div>
-          <div class="agency-title">Airlock IDC</div>
+          <div class="agency-header">
+            <div class="agency-logo">
+              <img src="./assets/Fisto logo.png" alt="Monks" />
+            </div>
+            <div class="agency-title">Conway IDC</div>
+          </div>
+          <div class="agency-info">
+            <div><strong>Location</strong> Netherlands</div>
+          </div>
+          <a href="https://www.conwaywater.com/Bottle_Water_Dispensers_With_UV_Purifier/index.html" target="_blank"
+            class="view-a">
+            <button class="btn">
+              <div>view</div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="25px" viewBox="0 0 24 24" fill="none">
+                <path d="M11.6801 14.62L14.2401 12.06L11.6801 9.5" stroke="grey" stroke-width="2" stroke-miterlimit="10"
+                  stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M4 12.0601H14.17" stroke="grey" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"
+                  stroke-linejoin="round"></path>
+              </svg>
+            </button>
+          </a>
         </div>
-        <div class="agency-info">
-          <div><strong>Location</strong> New Zealand</div>
-        </div>
-        <a href="https://fistoar.github.io/AirlockDCSRvalve/" target="_blank" class="view-a">
-          <button class="btn">
-            <div>view</div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="30px"
-              height="25px"
-              viewBox="0 0 24 24"
-              fill="none"
-            >
-              <path
-                d="M11.6801 14.62L14.2401 12.06L11.6801 9.5"
-                stroke="grey"
-                stroke-width="2"
-                stroke-miterlimit="10"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></path>
-              <path
-                d="M4 12.0601H14.17"
-                stroke="grey"
-                stroke-width="3"
-                stroke-miterlimit="10"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></path>
-            </svg>
-          </button>
-        </a>
-      </div>
 
-      <div class="agency-card">
-        <div class="agency-banner">
-          <img src="./assets/Tera_IDC.png" alt="Resn Banner" />
-        </div>
-        <div class="agency-header">
-          <div class="agency-logo">
-            <img src="./assets/Fisto logo.png" alt="Resn" />
+        <div class="agency-card">
+          <div class="agency-banner">
+            <img src="./assets/PopularWater_IDC.png" alt="Resn Banner" />
           </div>
-          <div class="agency-title">TTP IDC</div>
+          <div class="agency-header">
+            <div class="agency-logo">
+              <img src="./assets/Fisto logo.png" alt="Resn" />
+            </div>
+            <div class="agency-title">Popular water IDC</div>
+          </div>
+          <div class="agency-info">
+            <div><strong>Location</strong> New Zealand</div>
+          </div>
+          <a href="https://www.popularwater.in/DigitalCatalogue/index.html" target="_blank" class="view-a">
+            <button class="btn">
+              <div>view</div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="25px" viewBox="0 0 24 24" fill="none">
+                <path d="M11.6801 14.62L14.2401 12.06L11.6801 9.5" stroke="grey" stroke-width="2" stroke-miterlimit="10"
+                  stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M4 12.0601H14.17" stroke="grey" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"
+                  stroke-linejoin="round"></path>
+              </svg>
+            </button>
+          </a>
         </div>
-        <div class="agency-info">
-          <div><strong>Location</strong> New Zealand</div>
-        </div>
-        <a href="https://fistoar.github.io/Terratechpacks_IDC/" target="_blank" class="view-a">
-          <button class="btn">
-            <div>view</div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="30px"
-              height="25px"
-              viewBox="0 0 24 24"
-              fill="none"
-            >
-              <path
-                d="M11.6801 14.62L14.2401 12.06L11.6801 9.5"
-                stroke="grey"
-                stroke-width="2"
-                stroke-miterlimit="10"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></path>
-              <path
-                d="M4 12.0601H14.17"
-                stroke="grey"
-                stroke-width="3"
-                stroke-miterlimit="10"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></path>
-            </svg>
-          </button>
-        </a>
-      </div>
 
-      <div class="agency-card">
-        <div class="agency-banner">
-          <img src="./assets/bestomech_IDC.png" alt="Resn Banner" />
-        </div>
-        <div class="agency-header">
-          <div class="agency-logo">
-            <img src="./assets/Fisto logo.png" alt="Resn" />
+        <div class="agency-card">
+          <div class="agency-banner">
+            <img src="./assets/AirLock_IDC.png" alt="Resn Banner" />
           </div>
-          <div class="agency-title">Bestomech</div>
+          <div class="agency-header">
+            <div class="agency-logo">
+              <img src="./assets/Fisto logo.png" alt="Resn" />
+            </div>
+            <div class="agency-title">Airlock IDC</div>
+          </div>
+          <div class="agency-info">
+            <div><strong>Location</strong> New Zealand</div>
+          </div>
+          <a href="https://fistoar.github.io/AirlockDCSRvalve/" target="_blank" class="view-a">
+            <button class="btn">
+              <div>view</div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="25px" viewBox="0 0 24 24" fill="none">
+                <path d="M11.6801 14.62L14.2401 12.06L11.6801 9.5" stroke="grey" stroke-width="2" stroke-miterlimit="10"
+                  stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M4 12.0601H14.17" stroke="grey" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"
+                  stroke-linejoin="round"></path>
+              </svg>
+            </button>
+          </a>
         </div>
-        <div class="agency-info">
-          <div><strong>Location</strong> New Zealand</div>
+
+        <div class="agency-card">
+          <div class="agency-banner">
+            <img src="./assets/TTP_IDC.png  " alt="Resn Banner" />
+          </div>
+          <div class="agency-header">
+            <div class="agency-logo">
+              <img src="./assets/Fisto logo.png" alt="Resn" />
+            </div>
+            <div class="agency-title">TTP IDC</div>
+          </div>
+          <div class="agency-info">
+            <div><strong>Location</strong> New Zealand</div>
+          </div>
+          <a href="https://fistoar.github.io/Terratechpacks_IDC/" target="_blank" class="view-a">
+            <button class="btn">
+              <div>view</div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="25px" viewBox="0 0 24 24" fill="none">
+                <path d="M11.6801 14.62L14.2401 12.06L11.6801 9.5" stroke="grey" stroke-width="2" stroke-miterlimit="10"
+                  stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M4 12.0601H14.17" stroke="grey" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"
+                  stroke-linejoin="round"></path>
+              </svg>
+            </button>
+          </a>
         </div>
-        <a href="https://fistoar.github.io/AirlockDCSRvalve/" target="_blank" class="view-a">
-          <button class="btn">
-            <div>view</div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="30px"
-              height="25px"
-              viewBox="0 0 24 24"
-              fill="none"
-            >
-              <path
-                d="M11.6801 14.62L14.2401 12.06L11.6801 9.5"
-                stroke="grey"
-                stroke-width="2"
-                stroke-miterlimit="10"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></path>
-              <path
-                d="M4 12.0601H14.17"
-                stroke="grey"
-                stroke-width="3"
-                stroke-miterlimit="10"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></path>
-            </svg>
-          </button>
-        </a>
+
+        <div class="agency-card">
+          <div class="agency-banner">
+            <img src="./assets/bestomech_IDC.png" alt="Resn Banner" />
+          </div>
+          <div class="agency-header">
+            <div class="agency-logo">
+              <img src="./assets/Fisto logo.png" alt="Resn" />
+            </div>
+            <div class="agency-title">Bestomech</div>
+          </div>
+          <div class="agency-info">
+            <div><strong>Location</strong> New Zealand</div>
+          </div>
+          <a href="https://fistoar.github.io/AirlockDCSRvalve/" target="_blank" class="view-a">
+            <button class="btn">
+              <div>view</div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="25px" viewBox="0 0 24 24" fill="none">
+                <path d="M11.6801 14.62L14.2401 12.06L11.6801 9.5" stroke="grey" stroke-width="2" stroke-miterlimit="10"
+                  stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M4 12.0601H14.17" stroke="grey" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"
+                  stroke-linejoin="round"></path>
+              </svg>
+            </button>
+          </a>
+        </div>
+
+
       </div>
     </div>
-    <!-- ************************************************** AGENCY GRID END ************************************************* -->
+  </div>
+  <!-- ************************************************** AGENCY GRID END ************************************************* -->
 
-    <!-- ************************************************** VIDEO FLEX START ************************************************* -->
-    <div class="video-carousel-wrapper">
-      <div class="heading-container">
-        <div class="heading-main">
-          <p>It's your work,</p>
-          <p>supercharged.</p>
-        </div>
-        <div class="heading-sub">
-          <p>
-            <a
-              href="https://instagram.com/visualelectric/"
-              target="_blank"
-              rel="noopener"
-            >
-            </a>
-          </p>
-        </div>
-      </div>
+  <!-- ************************************************** FRAME START ************************************************* -->
 
-      <div class="video-flex">
-        <div class="video-container">
-          <video
-            src="https://framerusercontent.com/assets/MQiU7TDAVQRfIC6Tufe6REl5e0.mp4"
-            preload="metadata"
-            muted
-            loop
-            playsinline
-            class="hover-video"
-          ></video>
-          <button class="play-button" aria-label="Play video">&#9658;</button>
-        </div>
-        <div class="video-container">
-          <video
-            src="https://framerusercontent.com/assets/MQiU7TDAVQRfIC6Tufe6REl5e0.mp4"
-            preload="metadata"
-            muted
-            loop
-            playsinline
-            class="hover-video"
-          ></video>
-          <button class="play-button" aria-label="Play video">&#9658;</button>
-        </div>
-        <div class="video-container">
-          <video
-            src="https://framerusercontent.com/assets/MQiU7TDAVQRfIC6Tufe6REl5e0.mp4"
-            preload="metadata"
-            muted
-            loop
-            playsinline
-            class="hover-video"
-          ></video>
-          <button class="play-button" aria-label="Play video">&#9658;</button>
-        </div>
-        <div class="video-container">
-          <video
-            src="https://framerusercontent.com/assets/MQiU7TDAVQRfIC6Tufe6REl5e0.mp4"
-            preload="metadata"
-            muted
-            loop
-            playsinline
-            class="hover-video"
-          ></video>
-          <button class="play-button" aria-label="Play video">&#9658;</button>
-        </div>
-        <div class="video-container">
-          <video
-            src="https://framerusercontent.com/assets/MQiU7TDAVQRfIC6Tufe6REl5e0.mp4"
-            preload="metadata"
-            muted
-            loop
-            playsinline
-            class="hover-video"
-          ></video>
-          <button class="play-button" aria-label="Play video">&#9658;</button>
-        </div>
-        <div class="video-container">
-          <video
-            src="https://framerusercontent.com/assets/MQiU7TDAVQRfIC6Tufe6REl5e0.mp4"
-            preload="metadata"
-            muted
-            loop
-            playsinline
-            class="hover-video"
-          ></video>
-          <button class="play-button" aria-label="Play video">&#9658;</button>
-        </div>
+  <div class="frame-content">
+    <div class="frame-img">
+      <img src="./assets/frame-img.avif" alt="">
+    </div>
+    <div class="frame-btn"><button>Read our Mission</button></div>
+  </div>
+  <!-- ************************************************** FRAME END ************************************************* -->
+
+
+  <!-- ************************************************** VIDEO FLEX START ************************************************* -->
+  <div class="video-carousel-wrapper">
+    <div class="heading-container">
+      <div class="heading-main">
+        <p>It's your work,</p>
+        <p>supercharged.</p>
       </div>
-      <div class="scroll-buttons">
-        <button id="scrollLeft" aria-label="Scroll left">
-          <i class="fa-notdog-duo fa-solid fa-angle-left"></i>
-        </button>
-        <button id="scrollRight" aria-label="Scroll right">
-          <i class="fa-notdog-duo fa-solid fa-angle-right"></i>
-        </button>
+      <div class="heading-sub">
+        <p>
+          <a href="https://instagram.com/visualelectric/" target="_blank" rel="noopener">
+          </a>
+        </p>
       </div>
     </div>
 
-    <!-- ************************************************** VIDEO FLEX END ************************************************* -->
+    <div class="video-flex">
+      <div class="video-container">
+        <video src="https://framerusercontent.com/assets/MQiU7TDAVQRfIC6Tufe6REl5e0.mp4" preload="metadata" muted loop
+          playsinline class="hover-video"></video>
+        <button class="play-button" aria-label="Play video">&#9658;</button>
+      </div>
+      <div class="video-container">
+        <video src="https://framerusercontent.com/assets/MQiU7TDAVQRfIC6Tufe6REl5e0.mp4" preload="metadata" muted loop
+          playsinline class="hover-video"></video>
+        <button class="play-button" aria-label="Play video">&#9658;</button>
+      </div>
+      <div class="video-container">
+        <video src="https://framerusercontent.com/assets/MQiU7TDAVQRfIC6Tufe6REl5e0.mp4" preload="metadata" muted loop
+          playsinline class="hover-video"></video>
+        <button class="play-button" aria-label="Play video">&#9658;</button>
+      </div>
+      <div class="video-container">
+        <video src="https://framerusercontent.com/assets/MQiU7TDAVQRfIC6Tufe6REl5e0.mp4" preload="metadata" muted loop
+          playsinline class="hover-video"></video>
+        <button class="play-button" aria-label="Play video">&#9658;</button>
+      </div>
+      <div class="video-container">
+        <video src="https://framerusercontent.com/assets/MQiU7TDAVQRfIC6Tufe6REl5e0.mp4" preload="metadata" muted loop
+          playsinline class="hover-video"></video>
+        <button class="play-button" aria-label="Play video">&#9658;</button>
+      </div>
+      <div class="video-container">
+        <video src="https://framerusercontent.com/assets/MQiU7TDAVQRfIC6Tufe6REl5e0.mp4" preload="metadata" muted loop
+          playsinline class="hover-video"></video>
+        <button class="play-button" aria-label="Play video">&#9658;</button>
+      </div>
+    </div>
+    <div class="scroll-buttons">
+      <button id="scrollLeft" aria-label="Scroll left">
+        <i class="fa-notdog-duo fa-solid fa-angle-left"></i>
+      </button>
+      <button id="scrollRight" aria-label="Scroll right">
+        <i class="fa-notdog-duo fa-solid fa-angle-right"></i>
+      </button>
+    </div>
+  </div>
 
-    <!-- ************************************************** PAPPERS START ************************************************* -->
-    <section id="testimonials" class="pappers-content">
-      <!-- Heading -->
-      <!-- <div class="-pappers-heading">
+  <!-- ************************************************** VIDEO FLEX END ************************************************* -->
+
+  <!-- ************************************************** PAPPERS START ************************************************* -->
+  <section id="testimonials" class="pappers-content">
+    <!-- Heading -->
+    <!-- <div class="-pappers-heading">
         <p class="main-text">The tool creatives actually want to use...</p>
         <div class="scrabble">
           <img
@@ -701,228 +502,212 @@
         </div>
       </div> -->
 
-      <!-- Testimonials Wrapper -->
-      <div class="testimonials-pappers">
-        <div class="testimonial-green-papper">
-          <div class="image-wrapper">
-            <!-- <img
+    <!-- Testimonials Wrapper -->
+    <div class="testimonials-pappers">
+      <div class="testimonial-green-papper">
+        <div class="image-wrapper">
+          <!-- <img
               src="./assets/green-papper.avif"
               alt="Shadow"
               class="shadow"
             /> -->
-            <img
-              src="./assets/green-papper.png"
-              alt="Main"
-              class="main-img"
-              id="green-papper-img"
-            />
-          </div>
-          <div class="green-text">
-            <p class="green-quote">
-              “Visual Electric has ignited a new wave of creativity across our
-              team. It's not just enhancing our process, it's transforming how
-              we build the future of our brand.”
-            </p>
-            <div class="green-author">
-              <img
-                src="https://framerusercontent.com/images/fXu6Iiq13ogmvYEROC2bt4HRs.png"
-                alt="Author"
-                class="author-img"
-              />
-              <div class="green-author-info">
-                <p class="name">Elle abarca</p>
-                <p class="role">Creative Director, Maven Clinic</p>
-              </div>
-            </div>
-          </div>
+          <img src="./assets/green-papper.png" alt="Main" class="main-img" id="green-papper-img" />
         </div>
-
-        <!-- Single pink Testimonial -->
-        <div class="testimonial-pink-papper">
-          <div class="image-wrapper">
-            <!-- <img
-              src="./assets/green-papper.avif"
-              alt="Shadow"
-              class="shadow"
-            /> -->
-            <img
-              src="./assets/pink-papper.png"
-              alt="Main"
-              class="main-img"
-              id="pink-papper-img"
-            />
-          </div>
-          <div class="pink-text">
-            <p class="pink-quote">
-              “Visual Electric has ignited a new wave of creativity across our
-              team. It's not just enhancing our process, it's transforming how
-              we build the future of our brand.”
-            </p>
-            <div class="pink-author">
-              <img
-                src="https://framerusercontent.com/images/fXu6Iiq13ogmvYEROC2bt4HRs.png"
-                alt="Author"
-                class="author-img"
-              />
-              <div class="pink-author-info">
-                <p class="name">Elle abarca</p>
-                <p class="role">Creative Director, Maven Clinic</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Single greenbox Testimonial -->
-        <div class="testimonial-greenbox-papper">
-          <div class="image-wrapper">
-            <!-- <img
-              src="./assets/green-papper.avif"
-              alt="Shadow"
-              class="shadow"
-            /> -->
-            <img
-              src="./assets/greenbox.png"
-              alt="Main"
-              class="main-img"
-              id="greenbox-papper-img"
-            />
-          </div>
-          <div class="greenbox-text">
-            <p class="greenbox-quote">
-              “Visual Electric has ignited a new wave of creativity across our
-              team. It's not just enhancing our process, it's transforming how
-              we build the future of our brand.”
-            </p>
-            <div class="greenbox-author">
-              <img
-                src="https://framerusercontent.com/images/fXu6Iiq13ogmvYEROC2bt4HRs.png"
-                alt="Author"
-                class="author-img"
-              />
-              <div class="greenbox-author-info">
-                <p class="name">Elle abarca</p>
-                <p class="role">Creative Director, Maven Clinic</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="testimonial-purple-papper">
-          <div class="image-wrapper">
-            <!-- <img
-              src="./assets/green-papper.avif"
-              alt="Shadow"
-              class="shadow"
-            /> -->
-            <img
-              src="./assets/purple-papper.png"
-              alt="Main"
-              class="main-img"
-              id="purple-papper-img"
-            />
-          </div>
-          <div class="purple-text">
-            <p class="purple-quote">
-              “Visual Electric has ignited a new wave of creativity across our
-              team. It's not just enhancing our process, it's transforming how
-              we build the future of our brand.”
-            </p>
-            <div class="purple-author">
-              <img
-                src="https://framerusercontent.com/images/fXu6Iiq13ogmvYEROC2bt4HRs.png"
-                alt="Author"
-                class="author-img"
-              />
-              <div class="purple-author-info">
-                <p class="name">Elle abarca</p>
-                <p class="role">Creative Director, Maven Clinic</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="testimonial-yellow-papper">
-          <div class="image-wrapper">
-            <!-- <img
-              src="./assets/green-papper.avif"
-              alt="Shadow"
-              class="shadow"
-            /> -->
-            <img
-              src="./assets/yellow-papper.png"
-              alt="Main"
-              class="main-img"
-              id="yellow-papper-img"
-            />
-          </div>
-          <div class="yellow-text">
-            <p class="yellow-quote">
-              “Visual Electric has ignited a new wave of creativity across our
-              team. It's not just enhancing our process, it's transforming how
-              we build the future of our brand.”
-            </p>
-            <div class="yellow-author">
-              <img
-                src="https://framerusercontent.com/images/fXu6Iiq13ogmvYEROC2bt4HRs.png"
-                alt="Author"
-                class="author-img"
-              />
-              <div class="yellow-author-info">
-                <p class="name">Elle abarca</p>
-                <p class="role">Creative Director, Maven Clinic</p>
-              </div>
+        <div class="green-text">
+          <p class="green-quote">
+            “Visual Electric has ignited a new wave of creativity across our
+            team. It's not just enhancing our process, it's transforming how
+            we build the future of our brand.”
+          </p>
+          <div class="green-author">
+            <img src="https://framerusercontent.com/images/fXu6Iiq13ogmvYEROC2bt4HRs.png" alt="Author"
+              class="author-img" />
+            <div class="green-author-info">
+              <p class="name">Elle abarca</p>
+              <p class="role">Creative Director, Maven Clinic</p>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- ************************************************** PAPPERS END ************************************************* -->
 
-    <!-- ************************************************** ROLL IMAGES START ************************************************* -->
-
-    <!-- ************************************************** ROLL IMAGES END ************************************************* -->
-
-    <!-- ************************************************** FOOTER START ************************************************* -->
-    <footer class="footer">
-      <div class="footer-top">
-        <div class="footer-column">
-          <h3>Company</h3>
-          <ul>
-            <li><a href="#">Mission</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Enterprise</a></li>
-          </ul>
+      <!-- Single pink Testimonial -->
+      <div class="testimonial-pink-papper">
+        <div class="image-wrapper">
+          <!-- <img
+              src="./assets/green-papper.avif"
+              alt="Shadow"
+              class="shadow"
+            /> -->
+          <img src="./assets/pink-papper.png" alt="Main" class="main-img" id="pink-papper-img" />
         </div>
-
-        <div class="footer-column">
-          <h3>Product</h3>
-          <ul>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Learn</a></li>
-            <li><a href="#">What's New</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-column">
-          <h3>Plugins</h3>
-          <ul>
-            <li><a href="#">Framer</a></li>
-            <li><a href="#">Webflow</a></li>
-            <li><a href="#">Figma</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-column">
-          <h3>Legal</h3>
-          <ul>
-            <li><a href="#">Terms</a></li>
-            <li><a href="#">Privacy</a></li>
-            <li><a href="#">Copyright</a></li>
-          </ul>
+        <div class="pink-text">
+          <p class="pink-quote">
+            “Visual Electric has ignited a new wave of creativity across our
+            team. It's not just enhancing our process, it's transforming how
+            we build the future of our brand.”
+          </p>
+          <div class="pink-author">
+            <img src="https://framerusercontent.com/images/fXu6Iiq13ogmvYEROC2bt4HRs.png" alt="Author"
+              class="author-img" />
+            <div class="pink-author-info">
+              <p class="name">Elle abarca</p>
+              <p class="role">Creative Director, Maven Clinic</p>
+            </div>
+          </div>
         </div>
       </div>
 
-      <!-- <div class="social-links">
+      <!-- Single greenbox Testimonial -->
+      <div class="testimonial-greenbox-papper">
+        <div class="image-wrapper">
+          <!-- <img
+              src="./assets/green-papper.avif"
+              alt="Shadow"
+              class="shadow"
+            /> -->
+          <img src="./assets/greenbox.png" alt="Main" class="main-img" id="greenbox-papper-img" />
+        </div>
+        <div class="greenbox-text">
+          <p class="greenbox-quote">
+            “Visual Electric has ignited a new wave of creativity across our
+            team. It's not just enhancing our process, it's transforming how
+            we build the future of our brand.”
+          </p>
+          <div class="greenbox-author">
+            <img src="https://framerusercontent.com/images/fXu6Iiq13ogmvYEROC2bt4HRs.png" alt="Author"
+              class="author-img" />
+            <div class="greenbox-author-info">
+              <p class="name">Elle abarca</p>
+              <p class="role">Creative Director, Maven Clinic</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-purple-papper">
+        <div class="image-wrapper">
+          <!-- <img
+              src="./assets/green-papper.avif"
+              alt="Shadow"
+              class="shadow"
+            /> -->
+          <img src="./assets/purple-papper.png" alt="Main" class="main-img" id="purple-papper-img" />
+        </div>
+        <div class="purple-text">
+          <p class="purple-quote">
+            “Visual Electric has ignited a new wave of creativity across our
+            team. It's not just enhancing our process, it's transforming how
+            we build the future of our brand.”
+          </p>
+          <div class="purple-author">
+            <img src="https://framerusercontent.com/images/fXu6Iiq13ogmvYEROC2bt4HRs.png" alt="Author"
+              class="author-img" />
+            <div class="purple-author-info">
+              <p class="name">Elle abarca</p>
+              <p class="role">Creative Director, Maven Clinic</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-yellow-papper">
+        <div class="image-wrapper">
+          <!-- <img
+              src="./assets/green-papper.avif"
+              alt="Shadow"
+              class="shadow"
+            /> -->
+          <img src="./assets/yellow-papper.png" alt="Main" class="main-img" id="yellow-papper-img" />
+        </div>
+        <div class="yellow-text">
+          <p class="yellow-quote">
+            “Visual Electric has ignited a new wave of creativity across our
+            team. It's not just enhancing our process, it's transforming how
+            we build the future of our brand.”
+          </p>
+          <div class="yellow-author">
+            <img src="https://framerusercontent.com/images/fXu6Iiq13ogmvYEROC2bt4HRs.png" alt="Author"
+              class="author-img" />
+            <div class="yellow-author-info">
+              <p class="name">Elle abarca</p>
+              <p class="role">Creative Director, Maven Clinic</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ************************************************** PAPPERS END ************************************************* -->
+
+  <!-- ************************************************** ROTATING GALLERY START ************************************************* -->
+   <div class="fade"></div>
+
+  <div class="circle" style="--itemCount: 20;">
+    <div class="item" style="--item: 1;"><img src="./assets/AirLock_IDC.png"></div>
+    <div class="item" style="--item: 2;"><img src="./assets/AirLock_IDC.png"></div>
+    <div class="item" style="--item: 3;"><img src="./assets/AirLock_IDC.png"></div>
+    <div class="item" style="--item: 4;"><img src="./assets/AirLock_IDC.png"></div>
+    <div class="item" style="--item: 5;"><img src="./assets/AirLock_IDC.png"></div>
+    <div class="item" style="--item: 6;"><img src="./assets/AirLock_IDC.png"></div>
+    <div class="item" style="--item: 7;"><img src="./assets/AirLock_IDC.png"></div>
+    <div class="item" style="--item: 8;"><img src="./assets/AirLock_IDC.png"></div>
+    <div class="item" style="--item: 9;"><img src="./assets/AirLock_IDC.png"></div>
+    <div class="item" style="--item: 10;"><img src="./assets/AirLock_IDC.png"></div>
+    <div class="item" style="--item: 11;"><img src="./assets/AirLock_IDC.png"></div>
+    <div class="item" style="--item: 12;"><img src="./assets/AirLock_IDC.png"></div>
+    <div class="item" style="--item: 13;"><img src="./assets/AirLock_IDC.png"></div>
+    <div class="item" style="--item: 14;"><img src="./assets/AirLock_IDC.png"></div>
+    <div class="item" style="--item: 15;"><img src="./assets/AirLock_IDC.png"></div>
+    <div class="item" style="--item: 16;"><img src="./assets/AirLock_IDC.png"></div>
+    <div class="item" style="--item: 17;"><img src="./assets/AirLock_IDC.png"></div>
+    <div class="item" style="--item: 18;"><img src="./assets/AirLock_IDC.png"></div>
+    <div class="item" style="--item: 19;"><img src="./assets/AirLock_IDC.png"></div>
+    <div class="item" style="--item: 20;"><img src="./assets/AirLock_IDC.png"></div>
+  </div>
+
+  <!-- ************************************************** ROTATING GALLERY END ************************************************* -->
+
+  <!-- ************************************************** FOOTER START ************************************************* -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-column">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="#">Mission</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Enterprise</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Product</h3>
+        <ul>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Learn</a></li>
+          <li><a href="#">What's New</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Plugins</h3>
+        <ul>
+          <li><a href="#">Framer</a></li>
+          <li><a href="#">Webflow</a></li>
+          <li><a href="#">Figma</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Copyright</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- <div class="social-links">
             <!-- X (Twitter) Icon 
             <a href="#" aria-label="X">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -959,50 +744,47 @@
             </a>
         </div> -->
 
-      <div class="logo-section-footer">
-        <div class="logo-icon-footer">
-          <a href="https://www.fist-o.com">
-            <img
-              src="./assets/Fisto logo - white.png"
-              alt=""
-              class="logo-icon-footer"
-            />
-          </a>
-        </div>
-        <!-- <div class="logo-text">FIST-O IDC WEBSITE</div> -->
+    <div class="logo-section-footer">
+      <div class="logo-icon-footer">
+        <a href="https://www.fist-o.com">
+          <img src="./assets/Fisto logo - white.png" alt="" class="logo-icon-footer" />
+        </a>
       </div>
-      <p class="copyright">
-        <span class="designed-by"
-          >Designed By
-          <a href="https://www.fist-o.com" class="privacy-policy">Fist-O</a>
-        </span>
-        Copyright © 2025
-        <a href="https://www.fist-o.com/PrivacyPolicy.html"
-          >Fisto Tech Private Limited.</a
-        >
-        All Rights Reserved.
-        <a
-          href="https://www.fist-o.com/PrivacyPolicy.html"
-          class="privacy-policy"
-          >Privacy Policy.</a
-        >
-      </p>
-    </footer>
+      <!-- <div class="logo-text">FIST-O IDC WEBSITE</div> -->
+    </div>
+    <div class="copyright">
+      <div class="designed-by"> Designed By
+        <a href="https://www.fist-o.com" class="privacy-policy">
+          Fist-O Tech Private Limited
+        </a>
+        </div>
+      
+    <div class="copy-m">
+      Copyright © 2025
+      <a href="https://www.fist-o.com/PrivacyPolicy.html">
+        Fisto Tech Private Limited.
+      </a>
+      All Rights Reserved.
+    </div>
+    <div>
+  </footer>
 
-    <!-- ************************************************** FOOTER END ************************************************* -->
+  <!-- ************************************************** FOOTER END ************************************************* -->
 
-    <!-- ************************************************** BACK TO TOP BUTTON START ************************************************* -->
+  <!-- ************************************************** BACK TO TOP BUTTON START ************************************************* -->
 
-    <button id="backToTop" title="Back to Top">
-      <i class="fa-notdog-duo fa-solid fa-angle-up"></i>
-    </button>
+  <button id="backToTop" title="Back to Top">
+    <i class="fa-notdog-duo fa-solid fa-angle-up"></i>
+  </button>
 
-    <!-- ************************************************** BACK TO TOP BUTTON END ************************************************* -->
+  <!-- ************************************************** BACK TO TOP BUTTON END ************************************************* -->
 
-    <!-- ******************************************************* SCRIPT*********************************************** -->
-    <script src="./JS/navbar.js"></script>
-    <script src="./JS/productScroll.js"></script>
-    <script src="./JS/videoGrid.js"></script>
-    <script src="./script.js"></script>
-  </body>
+  <!-- ******************************************************* SCRIPT*********************************************** -->
+  <script src="./JS/navbar.js"></script>
+  <script src="./JS/productScroll.js"></script>
+  <script src="./JS/videoGrid.js"></script>
+  <script src="./JS/rotating.js"></script>
+  <script src="./script.js"></script>
+</body>
+
 </html>
