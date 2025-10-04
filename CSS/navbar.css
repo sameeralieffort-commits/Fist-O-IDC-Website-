@@ -19,7 +19,7 @@
 .navbar-left {
   display: flex;
   align-items: center;
-  gap: 32px;
+  gap: 22px;
 }
 
 /* Center logo */
@@ -173,7 +173,8 @@
   letter-spacing: 1px;
   border: 2px solid white;
   border-radius: 1000px;
-  padding: 12px 28px;
+  font-size: 0.8rem;
+  padding: 12px 12px;
   display: inline-block;
   box-shadow: 0 2px 5px 0 rgba(3,6,26,0.15);
   transition: .5s all ease-in-out;

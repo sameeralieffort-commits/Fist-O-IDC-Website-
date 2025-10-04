@@ -13,6 +13,7 @@
 
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="./CSS/navbar.css" />
+  <link rel="stylesheet" href="./CSS/creative.css">
   <link rel="stylesheet" href="./CSS/productScroll.css" />
   <link rel="stylesheet" href="./CSS/agency.css" />
   <link rel="stylesheet" href="./CSS/frame.css">
@@ -77,9 +78,75 @@
 
   <!-- ************************************************** NAVBAR END ************************************************* -->
 
-  <!-- ************************************************** ANIMATED START ************************************************* -->
-  <div class="homescroll"></div>
-  <!-- ************************************************** ANIMATED START ************************************************* -->
+  <!-- ************************************************** CREATIVE START ************************************************* -->
+  <div class="creative-container">
+    <!-- Hero Section -->
+    <div class="creative-hero">
+
+      <!-- Left grid -->
+      <div class="creative-grid creative-left" id="creativeLeftGrid">
+        <div class="creative-grid-inner">
+          <div class="creative-grid-item span-2">
+            <img src="https://images.unsplash.com/photo-1539533018447-63fcce2678e3?w=400&h=600&fit=crop"
+              alt="Orange quilted jacket">
+          </div>
+          <div class="creative-grid-item span-1">
+            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=300&fit=crop"
+              alt="Black headphones">
+          </div>
+          <div class="creative-grid-item span-1">
+            <img src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?w=400&h=300&fit=crop"
+              alt="Abstract shapes">
+          </div>
+          <div class="creative-grid-item span-2">
+            <img src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=400&h=600&fit=crop"
+              alt="White shirt outfit">
+          </div>
+        </div>
+      </div>
+
+      <!-- Right grid -->
+      <div class="creative-grid creative-right" id="creativeRightGrid">
+        <div class="creative-grid-inner">
+          <div class="creative-grid-item span-1">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop" alt="Red logo">
+          </div>
+          <div class="creative-grid-item span-2">
+            <img src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=400&h=600&fit=crop"
+              alt="Green sweater">
+          </div>
+          <div class="creative-grid-item span-1">
+            <img src="https://images.unsplash.com/photo-1551191080-ddf9645e4fad?w=600&h=400&fit=crop"
+              alt="Close-up eye">
+          </div>
+          <div class="creative-grid-item span-1">
+            <img src="https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=600&h=400&fit=crop"
+              alt="Orange sneakers">
+          </div>
+        </div>
+      </div>
+
+      <!-- Video and Content -->
+      <div class="creative-video-wrapper">
+        <div class="creative-video-container" id="creativeVideoContainer">
+          <video id="creativeMainVideo" muted loop playsinline>
+            <!-- <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+              type="video/mp4">
+          </video> -->
+          <div class="creative-video-overlay"></div>
+        </div>
+
+        <div class="creative-content" id="creativeHeroContent">
+          <h1>The new<br>creative workflow</h1>
+          <p>Turn ideas into images, designs, and videos.<br>Powered by AI, directed by you.</p>
+          <button class="creative-btn">Get Started</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="creative-scroll-space"></div> -->
+  </div>
+  <!-- ************************************************** CREATIVE END ************************************************* -->
 
   <!-- ************************************************** GSAP HORIZONTAL SLIDER START************************************************* -->
   <div class="scroll-container">
@@ -196,8 +263,14 @@
 
   <div id="our-work" class="acency-content">
 
-    <div class="agency-title">
+    <!-- <div class="agency-title">
       <h2>Our Work</h2>
+    </div> -->
+    <div class="agency-heading">
+      <p class="agency-main-text" style="color: black;">Our Works</p>
+      <div class="agency-scrabble">
+        <img src="./assets/text_line_black.png" alt="Scrabble" />
+      </div>
     </div>
     <div class="agency-grid">
 
@@ -492,15 +565,12 @@
   <!-- ************************************************** PAPPERS START ************************************************* -->
   <section id="testimonials" class="pappers-content">
     <!-- Heading -->
-    <!-- <div class="-pappers-heading">
-        <p class="main-text">The tool creatives actually want to use...</p>
-        <div class="scrabble">
-          <img
-            src="https://framerusercontent.com/images/gh3QqKf2i2bpK59z4QKGut6zt0k.png"
-            alt="Scrabble"
-          />
-        </div>
-      </div> -->
+    <div class="pappers-heading">
+      <p class="main-text">The tool creatives actually want to use...</p>
+      <div class="scrabble">
+        <img src="./assets/text_line.avif" alt="Scrabble" />
+      </div>
+    </div>
 
     <!-- Testimonials Wrapper -->
     <div class="testimonials-pappers">
@@ -640,29 +710,71 @@
   <!-- ************************************************** PAPPERS END ************************************************* -->
 
   <!-- ************************************************** ROTATING GALLERY START ************************************************* -->
-   <div class="fade"></div>
+  <!-- <div class="fade"></div> -->
 
-  <div class="circle" style="--itemCount: 20;">
-    <div class="item" style="--item: 1;"><img src="./assets/AirLock_IDC.png"></div>
-    <div class="item" style="--item: 2;"><img src="./assets/AirLock_IDC.png"></div>
-    <div class="item" style="--item: 3;"><img src="./assets/AirLock_IDC.png"></div>
-    <div class="item" style="--item: 4;"><img src="./assets/AirLock_IDC.png"></div>
-    <div class="item" style="--item: 5;"><img src="./assets/AirLock_IDC.png"></div>
-    <div class="item" style="--item: 6;"><img src="./assets/AirLock_IDC.png"></div>
-    <div class="item" style="--item: 7;"><img src="./assets/AirLock_IDC.png"></div>
-    <div class="item" style="--item: 8;"><img src="./assets/AirLock_IDC.png"></div>
-    <div class="item" style="--item: 9;"><img src="./assets/AirLock_IDC.png"></div>
-    <div class="item" style="--item: 10;"><img src="./assets/AirLock_IDC.png"></div>
-    <div class="item" style="--item: 11;"><img src="./assets/AirLock_IDC.png"></div>
-    <div class="item" style="--item: 12;"><img src="./assets/AirLock_IDC.png"></div>
-    <div class="item" style="--item: 13;"><img src="./assets/AirLock_IDC.png"></div>
-    <div class="item" style="--item: 14;"><img src="./assets/AirLock_IDC.png"></div>
-    <div class="item" style="--item: 15;"><img src="./assets/AirLock_IDC.png"></div>
-    <div class="item" style="--item: 16;"><img src="./assets/AirLock_IDC.png"></div>
-    <div class="item" style="--item: 17;"><img src="./assets/AirLock_IDC.png"></div>
-    <div class="item" style="--item: 18;"><img src="./assets/AirLock_IDC.png"></div>
-    <div class="item" style="--item: 19;"><img src="./assets/AirLock_IDC.png"></div>
-    <div class="item" style="--item: 20;"><img src="./assets/AirLock_IDC.png"></div>
+  <div class="circle-wrapper">
+    <div class="circle" style="--itemCount: 20;">
+      <div class="item" style="--item: 1;">
+        <div class="title">Popular IDC</div><img src="./assets/PopularWater_IDC.png">
+      </div>
+      <div class="item" style="--item: 2;">
+        <div class="title">Airlock IDC</div><img src="./assets/AirLock_IDC.png">
+      </div>
+      <div class="item" style="--item: 3;">
+        <div class="title">Tera Tech IDC</div><img src="./assets/TTP_IDC.png">
+      </div>
+      <div class="item" style="--item: 4;">
+        <div class="title">Airlock IDC</div><img src="./assets/AirLock_IDC.png">
+      </div>
+      <div class="item" style="--item: 5;">
+        <div class="title">Popular IDC</div><img src="./assets/PopularWater_IDC.png">
+      </div>
+      <div class="item" style="--item: 6;">
+        <div class="title">Tera Tech IDC</div><img src="./assets/TTP_IDC.png">
+      </div>
+      <div class="item" style="--item: 7;">
+        <div class="title">Airlock IDC</div><img src="./assets/AirLock_IDC.png">
+      </div>
+      <div class="item" style="--item: 8;">
+        <div class="title">Popular IDC</div><img src="./assets/PopularWater_IDC.png">
+      </div>
+      <div class="item" style="--item: 9;">
+        <div class="title">Tera Tech IDC</div><img src="./assets/TTP_IDC.png">
+      </div>
+      <div class="item" style="--item: 10;">
+        <div class="title">Airlock IDC</div><img src="./assets/AirLock_IDC.png">
+      </div>
+      <div class="item" style="--item: 11;">
+        <div class="title">Popular IDC</div><img src="./assets/PopularWater_IDC.png">
+      </div>
+      <div class="item" style="--item: 12;">
+        <div class="title">Tera Tech IDC</div><img src="./assets/TTP_IDC.png">
+      </div>
+      <div class="item" style="--item: 13;">
+        <div class="title">Airlock IDC</div><img src="./assets/AirLock_IDC.png">
+      </div>
+      <div class="item" style="--item: 14;">
+        <div class="title">Popular IDC</div><img src="./assets/PopularWater_IDC.png">
+      </div>
+      <div class="item" style="--item: 15;">
+        <div class="title">Tera Tech IDC</div><img src="./assets/TTP_IDC.png">
+      </div>
+      <div class="item" style="--item: 16;">
+        <div class="title">Airlock IDC</div><img src="./assets/AirLock_IDC.png">
+      </div>
+      <div class="item" style="--item: 17;">
+        <div class="title">Popular IDC</div><img src="./assets/PopularWater_IDC.png">
+      </div>
+      <div class="item" style="--item: 18;">
+        <div class="title">Tera Tech IDC</div><img src="./assets/TTP_IDC.png">
+      </div>
+      <div class="item" style="--item: 19;">
+        <div class="title">Airlock IDC</div><img src="./assets/AirLock_IDC.png">
+      </div>
+      <div class="item" style="--item: 20;">
+        <div class="title">Popular IDC</div><img src="./assets/PopularWater_IDC.png">
+      </div>
+    </div>
   </div>
 
   <!-- ************************************************** ROTATING GALLERY END ************************************************* -->
@@ -757,16 +869,16 @@
         <a href="https://www.fist-o.com" class="privacy-policy">
           Fist-O Tech Private Limited
         </a>
-        </div>
-      
-    <div class="copy-m">
-      Copyright © 2025
-      <a href="https://www.fist-o.com/PrivacyPolicy.html">
-        Fisto Tech Private Limited.
-      </a>
-      All Rights Reserved.
-    </div>
-    <div>
+      </div>
+
+      <div class="copy-m">
+        Copyright © 2025
+        <a href="https://www.fist-o.com/PrivacyPolicy.html">
+          Fisto Tech Private Limited.
+        </a>
+        All Rights Reserved.
+      </div>
+      <div>
   </footer>
 
   <!-- ************************************************** FOOTER END ************************************************* -->
@@ -781,9 +893,11 @@
 
   <!-- ******************************************************* SCRIPT*********************************************** -->
   <script src="./JS/navbar.js"></script>
+  <script src="./JS/creative.js"></script>
   <script src="./JS/productScroll.js"></script>
   <script src="./JS/videoGrid.js"></script>
   <script src="./JS/rotating.js"></script>
+  <script src="./JS/footer.js"></script>
   <script src="./script.js"></script>
 </body>
 

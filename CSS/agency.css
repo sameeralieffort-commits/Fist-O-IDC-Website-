@@ -1,17 +1,29 @@
-.acency-content{
+.acency-content {
   width: 100%;
   height: auto;
   background-color: #ffffff;
 }
 
-.agency-title{
-  display: flex;
-  justify-content: center;
-  text-align: center;
+.agency-heading {
+  width: 100%;
+  height: auto;
+  position: relative;
 }
 
-.agency-title h2{
-  font-size: 3rem;
+.agency-main-text {
+  font-size: 3.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 auto;
+  font-family: 'Poppins', sans-serif;
+}
+
+.agency-scrabble img {
+  width: 20%;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  left: 40%;
 }
 
 /* Outer wrapper just for centering */
@@ -70,13 +82,13 @@
 .agency-banner-p img {
   width: 90%;
   height: 90%;
-  object-fit:fill;
+  object-fit: fill;
 }
 
 .agency-banner img {
   width: 50%;
   height: 90%;
-  object-fit:fill;
+  object-fit: fill;
 }
 
 /* Card header */
@@ -133,7 +145,8 @@
   flex-direction: column;
   gap: 18px;
   font-weight: 400;
-  flex-grow: 1; /* ensures even stretch */
+  flex-grow: 1;
+  /* ensures even stretch */
 }
 
 .agency-info strong {
@@ -219,12 +232,22 @@
 
 /* Tablet */
 @media (max-width: 960px) {
+  .agency-scrabble img {
+    width: 30%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    left: 35%;
+  }
+
   .agency-grid {
     padding: 32px 8px;
   }
+
   .agency-bg {
     max-width: 700px;
   }
+
   .agency-banner {
     height: 160px;
   }
@@ -232,15 +255,34 @@
 
 /* Mobile */
 @media (max-width: 720px) {
+  .agency-main-text {
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .agency-scrabble img {
+    width: 50%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+  }
+
   .agency-grid {
     padding: 16px 0;
   }
+
   .agency-bg {
     max-width: 350px;
   }
+
   .agency-banner {
     height: 140px;
   }
+
   .agency-header,
   .agency-info {
     padding-left: 12px;
@@ -249,6 +291,22 @@
 }
 
 @media (max-width: 400px) {
+  .agency-main-text {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .agency-scrabble img {
+    width: 50%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+  }
+
   .agency-bg {
     max-width: 250px;
   }

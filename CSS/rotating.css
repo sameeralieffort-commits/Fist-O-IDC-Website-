@@ -1,72 +1,259 @@
  :root {
-      --carouselScale: 1;
-    }
-    @media screen and (max-width: 750px) {
-      :root {
-        --carouselScale: 0.6;
-      }
-    }
+   --carouselScale: 1;
+ }
+
+ /* @media screen and (max-width: 750px) {
+   :root {
+     --carouselScale: 0.6;
+   }
+ } */
+
+ .circle-wrapper {
+   width: 208vh;
+   /* same as circle diameter */
+   height: 55vh;
+   /* half of circle diameter */
+   overflow: hidden;
+   /* hides bottom half */
+   position: relative;
+   margin: 0 auto;
+   padding-top: 25%;
+   /* center horizontally */
+   /* optionally add bottom margin if needed to offset */
+ }
+
+ .circle {
+   bottom: 0 !important;
+   /* reset bottom position so top half visible */
+   /* Remove or adjust previous bottom: -30%; */
+ }
+
+ .fade {
+   height: 20vh;
+   width: 100vw;
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 80%);
+   z-index: 2;
+   pointer-events: none;
+ }
+
+ .circle {
+   --diameter: 200vh;
+   --radius: calc(var(--diameter) / 2);
+   width: var(--diameter);
+   height: var(--diameter);
+   position: relative;
+   bottom: -30%;
+   left: 50%;
+   transform: translateX(-50%) scale(var(--carouselScale));
+   z-index: 1;
+   transition: transform 0.5s cubic-bezier(.17, .67, .83, .67);
+   will-change: transform;
+ }
+
+ .circle .item {
+   --artworkSize: 32vh;
+   position: absolute;
+   width: var(--artworkSize);
+   height: 40vh;
+
+   background: #2e2e2e;
+   overflow: visible;
+   transition: 0.4s ease;
+
+   /* positioning math */
+   --step: calc((2 * 3.14159) / var(--itemCount));
+   --angle: calc(var(--step) * var(--item));
+   --x: calc(var(--diameter) / 2 + var(--radius) * cos(var(--angle)) - var(--artworkSize) / 2);
+   --y: calc(var(--diameter) / 2 + var(--radius) * sin(var(--angle)) - var(--artworkSize) / 2);
+   left: var(--x);
+   top: var(--y);
+   transform: rotate(calc(360deg / var(--itemCount) * var(--item) + 90deg));
+ }
+
+ .circle .item:hover {
+   transform: rotate(calc(360deg / var(--itemCount) * var(--item) + 90deg)) translateY(-12px) scale(1.1);
+ }
+
+ .circle .item .title {
+   position: absolute;
+   bottom: 100%;
+   /* place above the image */
+   left: 50%;
+   transform: translateX(-50%);
+   margin-bottom: 8px;
+   /* spacing between title and image */
+   padding: 4px 8px;
+   background: rgba(0, 0, 0, 0.7);
+   color: white;
+   font-size: 0.9rem;
+   white-space: nowrap;
+   opacity: 0;
+   pointer-events: none;
+   transition: opacity 0.3s ease;
+   border-radius: 4px;
+   z-index: 10;
+ }
+
+ .circle .item:hover .title {
+   opacity: 1;
+   pointer-events: auto;
+ }
+
+ .circle .item img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+ }
+
+ /* @keyframes spin {
+   from {
+     transform: translateX(-50%) rotate(0deg) scale(var(--carouselScale));
+   }
+
+   to {
+     transform: translateX(-50%) rotate(-360deg) scale(var(--carouselScale));
+     /* counter-clockwise 
+   }
+ } */
 
 
-    .fade {
-      height: 20vh;
-      width: 100vw;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      background: linear-gradient(rgba(0,0,0,0) 0%, rgba(0,0,0,1) 80%);
-      z-index: 2;
-      pointer-events: none;
-    }
+ @media (min-width: 810px) and (max-width: 1199px) {
+   /* iPad size */
+   /* :root {
+    --carouselScale: 0.75;
+    --carouselDiameter: 140vh;
+    --itemSizeWidth: 24vh;
+    --itemSizeHeight: 30vh;
+  } */
 
-    .circle {
-      --diameter: 110vh;
-      --radius: calc(var(--diameter) / 2);
-      width: var(--diameter);
-      height: var(--diameter);
-      position: relative;
-      bottom: -30%;
-      left: 50%;
-      transform: translateX(-50%) scale(var(--carouselScale));
-      z-index: 1;
-      animation: spin 120s infinite linear reverse; /* rotate left */
-    }
+   .circle-wrapper {
+     width: 75vh;
+     height: 70vh;
+     padding-top: 20%;
+   }
 
-    .circle .item {
-      --artworkSize: 13vh;
-      position: absolute;
-      width: var(--artworkSize);
-      height: var(--artworkSize);
-   
-      background: #2e2e2e;
-      overflow: hidden;
-      transition: 0.4s ease;
+   .circle {
+     --diameter: 55vh;
+     --radius: calc(var(--diameter) / 2);
+     width: var(--diameter);
+     height: var(--diameter);
+     position: relative;
+     left: 50%;
+     transform: translateX(-50%) scale(var(--carouselScale));
+     z-index: 1;
+     transition: transform 0.5s cubic-bezier(.17, .67, .83, .67);
+     will-change: transform;
+   }
 
-      /* positioning math */
-      --step: calc((2 * 3.14159) / var(--itemCount));
-      --angle: calc(var(--step) * var(--item));
-      --x: calc(var(--diameter) / 2 + var(--radius) * cos(var(--angle)) - var(--artworkSize) / 2);
-      --y: calc(var(--diameter) / 2 + var(--radius) * sin(var(--angle)) - var(--artworkSize) / 2);
-      left: var(--x);
-      top: var(--y);
-      transform: rotate(calc(360deg / var(--itemCount) * var(--item) + 90deg));
-    }
 
-    .circle .item:hover {
-      transform: rotate(calc(360deg / var(--itemCount) * var(--item) + 90deg)) translateY(-12px) scale(1.1);
-    }
+   .circle .item {
+     --artworkSize: 10vh;
+     position: absolute;
+     width: var(--artworkSize);
+     height: 14vh;
 
-    .circle .item img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+     background: #2e2e2e;
+     overflow: visible;
+     transition: 0.4s ease;
 
-    @keyframes spin {
-      from {
-        transform: translateX(-50%) rotate(0deg) scale(var(--carouselScale));
-      }
-      to {
-        transform: translateX(-50%) rotate(-360deg) scale(var(--carouselScale)); /* counter-clockwise */
-      }
-    }
+     /* positioning math */
+     --step: calc((2 * 3.14159) / var(--itemCount));
+     --angle: calc(var(--step) * var(--item));
+     --x: calc(var(--diameter) / 2 + var(--radius) * cos(var(--angle)) - var(--artworkSize) / 2);
+     --y: calc(var(--diameter) / 2 + var(--radius) * sin(var(--angle)) - var(--artworkSize) / 2);
+     left: var(--x);
+     top: var(--y);
+     transform: rotate(calc(360deg / var(--itemCount) * var(--item) + 90deg));
+   }
+
+
+ }
+
+ @media (max-width: 809px) {
+     .circle-wrapper {
+     width: 65vh;
+     height: 65vh;
+     padding-top: 20%;
+   }
+
+   .circle {
+     --diameter: 40vh;
+     --radius: calc(var(--diameter) / 2);
+     width: var(--diameter);
+     height: var(--diameter);
+     position: relative;
+     left: 50%;
+     transform: translateX(-50%) scale(var(--carouselScale));
+     z-index: 1;
+     transition: transform 0.5s cubic-bezier(.17, .67, .83, .67);
+     will-change: transform;
+   }
+
+
+   .circle .item {
+     --artworkSize: 10vh;
+     position: absolute;
+     width: var(--artworkSize);
+     height: 14vh;
+
+     background: #2e2e2e;
+     overflow: visible;
+     transition: 0.4s ease;
+
+     /* positioning math */
+     --step: calc((2 * 3.14159) / var(--itemCount));
+     --angle: calc(var(--step) * var(--item));
+     --x: calc(var(--diameter) / 2 + var(--radius) * cos(var(--angle)) - var(--artworkSize) / 2);
+     --y: calc(var(--diameter) / 2 + var(--radius) * sin(var(--angle)) - var(--artworkSize) / 2);
+     left: var(--x);
+     top: var(--y);
+     transform: rotate(calc(360deg / var(--itemCount) * var(--item) + 90deg));
+   }
+ }
+
+ @media screen and (max-width: 480px) {
+
+   /* Small mobile */
+        .circle-wrapper {
+     width: 50vh;
+     height: 85vh;
+     padding-top: 30%;
+   }
+
+   .circle {
+     --diameter: 70vh;
+     --radius: calc(var(--diameter) / 2);
+     width: var(--diameter);
+     height: var(--diameter);
+     position: relative;
+     left: 50%;
+     transform: translateX(-50%) scale(var(--carouselScale));
+     z-index: 1;
+     transition: transform 0.5s cubic-bezier(.17, .67, .83, .67);
+     will-change: transform;
+   }
+
+
+   .circle .item {
+     --artworkSize: 15vh;
+     position: absolute;
+     width: var(--artworkSize);
+     height: 19vh;
+
+     background: #2e2e2e;
+     overflow: visible;
+     transition: 0.4s ease;
+
+     /* positioning math */
+     --step: calc((2 * 3.14159) / var(--itemCount));
+     --angle: calc(var(--step) * var(--item));
+     --x: calc(var(--diameter) / 2 + var(--radius) * cos(var(--angle)) - var(--artworkSize) / 2);
+     --y: calc(var(--diameter) / 2 + var(--radius) * sin(var(--angle)) - var(--artworkSize) / 2);
+     left: var(--x);
+     top: var(--y);
+     transform: rotate(calc(360deg / var(--itemCount) * var(--item) + 90deg));
+   }
+ }

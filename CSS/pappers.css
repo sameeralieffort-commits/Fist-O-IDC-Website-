@@ -16,21 +16,29 @@
 
 
 /* Heading */
-/* .pappers-heading {
-  margin-bottom: 3rem;
-}
-
-.pappers-heading .main-text {
-  font-size: 3rem;
-  font-weight: 600;
-}
-
-.pappers-heading .scrabble img {
-  margin-top: 1rem;
-  max-width: 400px;
+.pappers-heading {
   width: 100%;
   height: auto;
-} */
+  max-width: 1200px;
+  position: relative;
+}
+
+.main-text {
+  width: 60%;
+  font-size: 3.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 auto;
+  font-family: 'Poppins', sans-serif;
+}
+
+.scrabble img {
+  width: 30%;
+  height: auto;
+  position: absolute;
+  top: 20%;
+  right: 25%;
+}
 
 /* Testimonials */
 .testimonials-pappers {
@@ -410,6 +418,15 @@
 
 @media (min-width: 810px) and (max-width: 1199px) {
 
+
+  .scrabble img {
+    width: 35%;
+    height: auto;
+    position: absolute;
+    top: 20%;
+    right: 20%;
+  }
+
   .testimonials-pappers {
     height: 1079px;
     width: 798px;
@@ -755,6 +772,24 @@
 
 
 @media (max-width: 809px) {
+
+  .main-text {
+    width: 70%;
+    font-size: 3.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .scrabble img {
+    width: 40%;
+    height: auto;
+    position: absolute;
+    top: 20%;
+    right: 17%;
+  }
+
   .testimonials-pappers {
     height: 1079px;
     width: 798px;
@@ -906,7 +941,7 @@
     gap: 1.5rem;
     position: absolute;
     right: -17%;
-    z-index: 5 ;
+    z-index: 5;
   }
 
   .greenbox-text {
@@ -1096,6 +1131,24 @@
 
 
 @media screen and (max-width: 480px) {
+
+  .main-text {
+    width: 70%;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .scrabble img {
+    width: 35%;
+    height: auto;
+    position: absolute;
+    top: 20%;
+    right: 20%;
+  }
+
   .testimonials-pappers {
     height: 1079px;
     width: 480px;
@@ -1248,7 +1301,7 @@
     position: absolute;
     top: 15%;
     right: -40%;
-    z-index: 5 ;
+    z-index: 5;
   }
 
   .greenbox-text {
@@ -1590,7 +1643,7 @@
     position: absolute;
     top: 15%;
     right: -63%;
-    z-index: 5 ;
+    z-index: 5;
   }
 
   .greenbox-text {
