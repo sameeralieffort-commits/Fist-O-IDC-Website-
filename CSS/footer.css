@@ -87,7 +87,7 @@
             color: #fff;
         }
 
-        .copyright {
+        /* .copyright {
             font-size: 16px;
             font-weight: 400;
             margin: 1% 0;
@@ -112,12 +112,6 @@
             text-decoration: underline;
         }
 
-        /* .copyright img {
-            width: 5%;
-            height: auto;
-            border-style: none;
-        } */
-
         .designed-by {
             font-size: 16px;
             font-weight: 400;
@@ -129,6 +123,38 @@
             text-decoration: none;
         }
 
+        .designed-by a:hover {
+            text-decoration: underline;
+        } */
+
+        .copyright {
+            font-size: 16px;
+            font-weight: 400;
+            margin: 1% 0;
+            padding: 15px 0 0 0;
+            border-top: 1px solid #ccc;
+            color: #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* centers by default */
+            position: relative;
+            width: 100%;
+        }
+
+        .designed-by {
+            float: left;
+            position: absolute;
+            left: 1%;
+        }
+
+        .designed-by a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        .copy-m a:hover,
         .designed-by a:hover {
             text-decoration: underline;
         }
@@ -143,7 +169,7 @@
                 font-size: 48px;
             }
 
-            .copyright {
+            /* .copyright {
                 display: flex;
                 flex-direction: column;
                 text-align: center;
@@ -163,6 +189,22 @@
                 position: relative;
                 font-size: 18px;
 
+            } */
+
+            .copyright {
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                gap: 0.4rem;
+            }
+
+            .designed-by {
+                position: static;
+                text-align: center;
+            }
+
+            .copy-m {
+                text-align: center;
             }
         }
 
@@ -185,7 +227,7 @@
                 letter-spacing: 4px;
             }
 
-            .copyright {
+            /* .copyright {
                 font-size: 12px;
                 padding-bottom: 2%;
                 margin: 3% 0;
@@ -197,5 +239,21 @@
 
             .designed-by {
                 font-size: 11px;
+            } */
+
+            .copyright {
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                gap: 0.4rem;
+            }
+
+            .designed-by {
+                position: static;
+                text-align: center;
+            }
+
+            .copy-m {
+                text-align: center;
             }
         }

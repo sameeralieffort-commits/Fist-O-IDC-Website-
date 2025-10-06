@@ -3,6 +3,15 @@
     overflow-y: hidden;
   }
 
+  #scrollContainer {
+    opacity: 0;
+    transition: opacity .5s ease;
+  }
+
+  #scrollContainer.visible {
+    opacity: 1;
+  }
+
   .horizontal-wrapper {
     position: relative;
     overflow: visible;
@@ -57,7 +66,7 @@
 
   .green {
     position: relative;
-    background-image: url('../assets/flowers.png');
+    background-image: url('../assets/flowers.webp');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -131,7 +140,7 @@
 
   .blue {
     position: relative;
-    background-image: url('../assets/mountain.png');
+    background-image: url('../assets/mountain.webp');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -139,7 +148,7 @@
 
   .orange {
     position: relative;
-    background-image: url('../assets/peopleGarden.avif');
+    background-image: url('../assets/peopleGarden.webp');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -278,7 +287,7 @@
 
     .horizontal-container .panel {
       margin: 0%;
-       border: 10px solid black;
+      border: 10px solid black;
       border-radius: 20px;
     }
 
