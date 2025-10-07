@@ -14,17 +14,62 @@
     height: auto;
 }
 
-.frame-btn{
+.frame-btn {
     position: absolute;
     left: 45%;
     top: 65%;
 }
 
-.frame-btn button{
+.frame-btn button {
     color: white;
     background: rgb(174, 51, 51);
-    padding: 10px 15px;
+    padding: 15px 15px;
     border-radius: 50px;
     border: 0;
     cursor: pointer;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 884px) {
+    .frame-btn {
+        position: absolute;
+        left: 40%;
+        top: 65%;
+    }
+}
+
+@media (max-width: 768px) {
+    .frame-btn {
+        position: absolute;
+        left: 40%;
+        top: 65%;
+    }
+
+    .frame-btn button {
+        color: white;
+        background: rgb(174, 51, 51);
+        padding: 5px 5px;
+        border-radius: 50px;
+        border: 0;
+        cursor: pointer;
+        font-size: .5rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .frame-btn {
+        position: absolute;
+        left: 40%;
+        top: 60%;
+    }
+
+    .frame-btn button {
+        color: white;
+        background: rgb(174, 51, 51);
+        padding: 5px 5px;
+        border-radius: 50px;
+        border: 0;
+        cursor: pointer;
+        font-size: .5rem;
+    }
 }
