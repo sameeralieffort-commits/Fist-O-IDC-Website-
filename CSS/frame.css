@@ -16,7 +16,7 @@
 
 .frame-btn {
     position: absolute;
-    left: 45%;
+    left: 43%;
     top: 65%;
 }
 
@@ -33,30 +33,48 @@
 @media (max-width: 884px) {
     .frame-btn {
         position: absolute;
-        left: 40%;
-        top: 65%;
+        left: 38%;
+        top: 62%;
     }
 }
 
 @media (max-width: 768px) {
     .frame-btn {
         position: absolute;
-        left: 40%;
-        top: 65%;
+        left: 38%;
+        top: 63%;
     }
 
     .frame-btn button {
         color: white;
         background: rgb(174, 51, 51);
-        padding: 5px 5px;
+        padding: 15px 15px;
         border-radius: 50px;
         border: 0;
         cursor: pointer;
-        font-size: .5rem;
+        font-size: 1rem;
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 428px) {
+    .frame-btn {
+        position: absolute;
+        left: 32%;
+        top: 80%;
+    }
+
+    .frame-btn button {
+        color: white;
+        background: rgb(174, 51, 51);
+        padding: 10px 15px;
+        border-radius: 50px;
+        border: 0;
+        cursor: pointer;
+        font-size:.8rem;
+    }
+}
+
+/* @media (max-width: 360px) {
     .frame-btn {
         position: absolute;
         left: 40%;
@@ -72,4 +90,4 @@
         cursor: pointer;
         font-size: .5rem;
     }
-}
+} */

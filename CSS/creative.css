@@ -256,7 +256,7 @@
  }
 
  .brand-logo-image {
-     height: 30px;
+     height: 45px;
      opacity: 0.7;
      filter: brightness(0) invert(1);
      transition: opacity 0.3s ease;
