@@ -112,7 +112,7 @@
  .left-side-gallery {
      position: absolute;
      top: 50%;
-     left: 18%;
+     left: 16%;
      transform: translate(-50%, -50%);
      width: 400px;
      height: 600px;
@@ -122,7 +122,6 @@
 
  .left-side-gallery .gallery-image-card {
      position: absolute;
-     border-radius: 12px;
      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
      overflow: hidden;
      transition: all 0.3s ease-out;
@@ -135,45 +134,45 @@
  }
 
  .left-side-gallery .left-img-one {
-     width: 150px;
-     height: 150px;
-     top: 0%;
-     left: 0%;
+     width: 160px;
+     height: 200px;
+     top: -10%;
+     left: 35%;
  }
 
  .left-side-gallery .left-img-two {
-     width: 180px;
-     height: 120px;
-     top: 30%;
-     left: -10%;
+     width: 160px;
+     height: 200px;
+     top: 12%;
+     left: 4%;
  }
 
  .left-side-gallery .left-img-three {
-     width: 200px;
-     height: 280px;
-     top: 50%;
-     left: 10%;
+     width: 160px;
+     height: 200px;
+     top: 35%;
+     left: 35%;
  }
 
  .left-side-gallery .left-img-four {
-     width: 140px;
-     height: 140px;
-     bottom: 5%;
-     left: -5%;
+     width: 160px;
+     height: 200px;
+     bottom: 10%;
+     left: 4%;
  }
 
  .left-side-gallery .left-img-five {
      width: 160px;
-     height: 100px;
-     bottom: 0%;
-     left: 40%;
+     height: 200px;
+     bottom: -15%;
+     left: 35%;
  }
 
  /* Right Images Container */
  .right-side-gallery {
      position: absolute;
      top: 50%;
-     right: 18%;
+     right: 16%;
      transform: translate(50%, -50%);
      width: 400px;
      height: 600px;
@@ -183,7 +182,6 @@
 
  .right-side-gallery .gallery-image-card {
      position: absolute;
-     border-radius: 12px;
      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
      overflow: hidden;
      transition: all 0.3s ease-out;
@@ -196,38 +194,38 @@
  }
 
  .right-side-gallery .right-img-one {
-     width: 180px;
-     height: 120px;
-     top: 0%;
-     right: 10%;
+     width: 160px;
+     height: 200px;
+     top: -10%;
+     right: 35%;
  }
 
  .right-side-gallery .right-img-two {
-     width: 140px;
-     height: 140px;
-     top: 25%;
-     right: -5%;
+     width: 160px;
+     height: 200px;
+     top: 12%;
+     right: 5%;
  }
 
  .right-side-gallery .right-img-three {
-     width: 170px;
-     height: 250px;
-     top: 45%;
-     right: 15%;
+     width: 160px;
+     height: 200px;
+     top: 35%;
+     right: 35%;
  }
 
  .right-side-gallery .right-img-four {
-     width: 190px;
-     height: 140px;
+     width: 160px;
+     height: 200px;
      bottom: 10%;
-     right: -10%;
+     right: 5%;
  }
 
  .right-side-gallery .right-img-five {
      width: 160px;
-     height: 160px;
-     bottom: 0%;
-     right: 30%;
+     height: 200px;
+     bottom: -15%;
+     right: 35%;
  }
 
  /* Brand Marquee */

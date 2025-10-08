@@ -137,11 +137,11 @@ window.addEventListener('scroll', () => {
         }
         
         // Left elements in final position (inside canvas, left side)
-        leftGalleryContainer.style.transform = `translate(calc(-50% - ${responsiveValues.finalOffset}px), calc(-50% - 8%))`;
+        leftGalleryContainer.style.transform = `translate(calc(-30% - ${responsiveValues.finalOffset}px), calc(-50% - 8%))`;
         leftGalleryContainer.style.opacity = 1;
         
         // Right elements in final position (inside canvas, right side)
-        rightGalleryContainer.style.transform = `translate(calc(50% + ${responsiveValues.finalOffset}px), calc(-50% - 8%))`;
+        rightGalleryContainer.style.transform = `translate(calc(30% + ${responsiveValues.finalOffset}px), calc(-50% - 8%))`;
         rightGalleryContainer.style.opacity = 1;
         
         // Show marquee below canvas
