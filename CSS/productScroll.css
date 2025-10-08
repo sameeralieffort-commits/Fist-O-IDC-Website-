@@ -177,100 +177,6 @@
 
         /* Tablet Styles - 1024px and below */
         @media (max-width: 1024px) {
-            .primary-hero-heading h1 {
-                font-size: 64px;
-            }
-
-            .primary-hero-heading p {
-                font-size: 18px;
-                max-width: 500px;
-            }
-
-            .dark-canvas-backdrop {
-                width: 92%;
-                height: 70%;
-            }
-
-            .featured-video-wrapper {
-                max-width: 500px;
-            }
-
-            .left-side-gallery,
-            .right-side-gallery {
-                width: 320px;
-                height: 500px;
-            }
-
-            .left-side-gallery {
-                left: 20%;
-            }
-
-            .right-side-gallery {
-                right: 20%;
-            }
-
-            .left-side-gallery .left-img-one {
-                width: 120px;
-                height: 120px;
-            }
-
-            .left-side-gallery .left-img-two {
-                width: 144px;
-                height: 96px;
-            }
-
-            .left-side-gallery .left-img-three {
-                width: 160px;
-                height: 224px;
-            }
-
-            .left-side-gallery .left-img-four {
-                width: 112px;
-                height: 112px;
-            }
-
-            .left-side-gallery .left-img-five {
-                width: 128px;
-                height: 80px;
-            }
-
-            .right-side-gallery .right-img-one {
-                width: 144px;
-                height: 96px;
-            }
-
-            .right-side-gallery .right-img-two {
-                width: 112px;
-                height: 112px;
-            }
-
-            .right-side-gallery .right-img-three {
-                width: 136px;
-                height: 200px;
-            }
-
-            .right-side-gallery .right-img-four {
-                width: 152px;
-                height: 112px;
-            }
-
-            .right-side-gallery .right-img-five {
-                width: 128px;
-                height: 128px;
-            }
-
-            .brand-slider-section {
-                width: 95%;
-                padding: 16px 0;
-            }
-
-            .brand-logo-image {
-                height: 24px;
-            }
-
-            .slider-content-track {
-                gap: 48px;
-            }
 
             /* Horizontal Scroll Mobile Styles */
             .horizontal-container {
@@ -287,14 +193,14 @@
 
             .panel.black {
                 font-size: 2.5rem;
-                padding: 2rem;
+                padding: 5rem;
                 width: 100vw !important;
                 margin: 0;
             }
 
             .panels-contentz {
-                gap: 5rem;
-                padding: 2rem;
+                gap: 2rem;
+                padding: 1rem;
             }
 
             .panel-contentz-head {
@@ -311,120 +217,15 @@
 
             .panel-contentz-body {
                 padding: 2% 0 2% 0%;
-                gap: 2rem;
+                gap: 1rem;
+            }
+            .panel-contentz-b1 p {
+                width: 85%;
             }
         }
 
         /* Mobile Landscape & Large Mobile - 768px and below */
         @media (max-width: 768px) {
-            .primary-hero-heading h1 {
-                font-size: 48px;
-                margin-bottom: 16px;
-            }
-
-            .primary-hero-heading p {
-                font-size: 16px;
-                padding: 0 20px;
-                max-width: 400px;
-                margin-bottom: 24px;
-            }
-
-            .action-button-primary {
-                padding: 14px 32px;
-                font-size: 15px;
-            }
-
-            .dark-canvas-backdrop {
-                width: 95%;
-                height: 65%;
-                border-radius: 16px;
-            }
-
-            .featured-video-wrapper {
-                max-width: 400px;
-            }
-
-            .featured-video-wrapper video {
-                border-radius: 10px;
-            }
-
-            .left-side-gallery,
-            .right-side-gallery {
-                width: 240px;
-                height: 400px;
-            }
-
-            .left-side-gallery {
-                left: 20%;
-            }
-
-            .right-side-gallery {
-                right: 20%;
-            }
-
-            .left-side-gallery .left-img-one {
-                width: 90px;
-                height: 90px;
-            }
-
-            .left-side-gallery .left-img-two {
-                width: 108px;
-                height: 72px;
-            }
-
-            .left-side-gallery .left-img-three {
-                width: 120px;
-                height: 168px;
-            }
-
-            .left-side-gallery .left-img-four {
-                width: 84px;
-                height: 84px;
-            }
-
-            .left-side-gallery .left-img-five {
-                width: 96px;
-                height: 60px;
-            }
-
-            .right-side-gallery .right-img-one {
-                width: 108px;
-                height: 72px;
-            }
-
-            .right-side-gallery .right-img-two {
-                width: 84px;
-                height: 84px;
-            }
-
-            .right-side-gallery .right-img-three {
-                width: 102px;
-                height: 150px;
-            }
-
-            .right-side-gallery .right-img-four {
-                width: 114px;
-                height: 84px;
-            }
-
-            .right-side-gallery .right-img-five {
-                width: 96px;
-                height: 96px;
-            }
-
-            .brand-slider-section {
-                bottom: 10px;
-                padding: 12px 0;
-                border-radius: 40px;
-            }
-
-            .brand-logo-image {
-                height: 20px;
-            }
-
-            .slider-content-track {
-                gap: 40px;
-            }
 
             /* Horizontal Scroll Mobile Styles */
             .horizontal-container .panel {
@@ -435,7 +236,7 @@
 
             .panel.black {
                 font-size: 2rem;
-                padding: 1.5rem;
+                padding: 5rem;
             }
 
             .panels-contentz {
@@ -486,125 +287,17 @@
 
         /* Small Mobile - 480px and below */
         @media (max-width: 480px) {
-            .primary-hero-heading h1 {
-                font-size: 36px;
-                line-height: 1.1em;
-            }
-
-            .primary-hero-heading p {
-                font-size: 14px;
-                max-width: 320px;
-                margin-bottom: 20px;
-            }
-
-            .action-button-primary {
-                padding: 12px 28px;
-                font-size: 14px;
-            }
-
-            .dark-canvas-backdrop {
-                width: 96%;
-                height: 60%;
-                border-radius: 12px;
-            }
-
-            .featured-video-wrapper {
-                max-width: 300px;
-            }
-
-            .featured-video-wrapper video {
-                border-radius: 8px;
-            }
-
-            .left-side-gallery,
-            .right-side-gallery {
-                width: 180px;
-                height: 320px;
-            }
-
-            .left-side-gallery {
-                left: 22%;
-            }
-
-            .right-side-gallery {
-                right: 22%;
-            }
-
-            .left-side-gallery .left-img-one {
-                width: 70px;
-                height: 70px;
-            }
-
-            .left-side-gallery .left-img-two {
-                width: 84px;
-                height: 56px;
-            }
-
-            .left-side-gallery .left-img-three {
-                width: 95px;
-                height: 130px;
-            }
-
-            .left-side-gallery .left-img-four {
-                width: 65px;
-                height: 65px;
-            }
-
-            .left-side-gallery .left-img-five {
-                width: 75px;
-                height: 48px;
-            }
-
-            .right-side-gallery .right-img-one {
-                width: 84px;
-                height: 56px;
-            }
-
-            .right-side-gallery .right-img-two {
-                width: 65px;
-                height: 65px;
-            }
-
-            .right-side-gallery .right-img-three {
-                width: 80px;
-                height: 115px;
-            }
-
-            .right-side-gallery .right-img-four {
-                width: 88px;
-                height: 65px;
-            }
-
-            .right-side-gallery .right-img-five {
-                width: 75px;
-                height: 75px;
-            }
-
-            .brand-slider-section {
-                bottom: 8px;
-                padding: 10px 0;
-                border-radius: 30px;
-                width: 96%;
-            }
-
-            .brand-logo-image {
-                height: 18px;
-            }
-
-            .slider-content-track {
-                gap: 32px;
-            }
 
             /* Horizontal Scroll Mobile Styles */
             .horizontal-container .panel {
                 width: 90vw !important;
-                margin: 3vh 5vw;
+                margin: 3vh 4vw;
                 height: 70vh;
             }
 
             .panel.black {
                 font-size: 1.8rem;
-                padding: 1rem;
+                padding: 2rem;
                 line-height: 1.3;
             }
 
@@ -621,83 +314,6 @@
 
         /* Extra Small Mobile - 360px and below */
         @media (max-width: 360px) {
-            .primary-hero-heading h1 {
-                font-size: 32px;
-            }
-
-            .primary-hero-heading p {
-                font-size: 13px;
-                max-width: 280px;
-            }
-
-            .action-button-primary {
-                padding: 10px 24px;
-                font-size: 13px;
-            }
-
-            .left-side-gallery,
-            .right-side-gallery {
-                width: 160px;
-                height: 280px;
-            }
-
-            .left-side-gallery .left-img-one {
-                width: 60px;
-                height: 60px;
-            }
-
-            .left-side-gallery .left-img-two {
-                width: 72px;
-                height: 48px;
-            }
-
-            .left-side-gallery .left-img-three {
-                width: 80px;
-                height: 110px;
-            }
-
-            .left-side-gallery .left-img-four {
-                width: 55px;
-                height: 55px;
-            }
-
-            .left-side-gallery .left-img-five {
-                width: 65px;
-                height: 40px;
-            }
-
-            .right-side-gallery .right-img-one {
-                width: 72px;
-                height: 48px;
-            }
-
-            .right-side-gallery .right-img-two {
-                width: 55px;
-                height: 55px;
-            }
-
-            .right-side-gallery .right-img-three {
-                width: 68px;
-                height: 98px;
-            }
-
-            .right-side-gallery .right-img-four {
-                width: 75px;
-                height: 55px;
-            }
-
-            .right-side-gallery .right-img-five {
-                width: 65px;
-                height: 65px;
-            }
-
-            .brand-logo-image {
-                height: 16px;
-            }
-
-            .slider-content-track {
-                gap: 28px;
-            }
 
             /* Horizontal Scroll Mobile Styles */
             .panel.black {
