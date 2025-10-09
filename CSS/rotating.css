@@ -258,6 +258,9 @@
  }
 
  @media screen and (max-width: 480px) {
+   .circle-wrapper-heading {
+    padding-bottom: 2rem;
+   }
 
    /* Small mobile */
    .circle-wrapper {

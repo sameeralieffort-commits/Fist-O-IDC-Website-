@@ -463,7 +463,7 @@
   }
 
   .green-quote {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-bottom: 1rem;
   }
 
@@ -476,20 +476,20 @@
   }
 
   .green-author .author-img {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     object-fit: cover;
   }
 
   .green-author-info .name {
     font-family: monospace;
-    font-size: 1rem;
+    font-size: .8rem;
     text-transform: uppercase;
   }
 
   .green-author-info .role {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     color: #ffffff;
   }
 
@@ -530,7 +530,7 @@
 
 
   .pink-quote {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-bottom: 1rem;
   }
 
@@ -543,20 +543,20 @@
   }
 
   .pink-author .author-img {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     object-fit: cover;
   }
 
   .pink-author-info .name {
     font-family: monospace;
-    font-size: 1rem;
+    font-size: .8rem;
     text-transform: uppercase;
   }
 
   .pink-author-info .role {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     color: #ffffff;
   }
 
@@ -597,7 +597,7 @@
 
 
   .greenbox-quote {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-bottom: 1rem;
   }
 
@@ -610,20 +610,20 @@
   }
 
   .greenbox-author .author-img {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     object-fit: cover;
   }
 
   .greenbox-author-info .name {
     font-family: monospace;
-    font-size: 1rem;
+    font-size: .8rem;
     text-transform: uppercase;
   }
 
   .greenbox-author-info .role {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     color: #ffffff;
   }
 
@@ -665,7 +665,7 @@
 
 
   .purple-quote {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-bottom: 1rem;
   }
 
@@ -678,20 +678,20 @@
   }
 
   .purple-author .author-img {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     object-fit: cover;
   }
 
   .purple-author-info .name {
     font-family: monospace;
-    font-size: 1rem;
+    font-size: .8rem;
     text-transform: uppercase;
   }
 
   .purple-author-info .role {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     color: #ffffff;
   }
 
@@ -735,7 +735,7 @@
 
 
   .yellow-quote {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-bottom: 1rem;
   }
 
@@ -748,20 +748,20 @@
   }
 
   .yellow-author .author-img {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     object-fit: cover;
   }
 
   .yellow-author-info .name {
     font-family: monospace;
-    font-size: 1rem;
+    font-size: .8rem;
     text-transform: uppercase;
   }
 
   .yellow-author-info .role {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     color: #ffffff;
   }
 
@@ -826,7 +826,7 @@
   }
 
   .green-quote {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-bottom: 1rem;
   }
 
@@ -839,15 +839,15 @@
   }
 
   .green-author .author-img {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     object-fit: cover;
   }
 
   .green-author-info .name {
     font-family: monospace;
-    font-size: 1rem;
+    font-size: .9rem;
     text-transform: uppercase;
   }
 
@@ -893,7 +893,7 @@
 
 
   .pink-quote {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-bottom: 1rem;
   }
 
@@ -906,15 +906,15 @@
   }
 
   .pink-author .author-img {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     object-fit: cover;
   }
 
   .pink-author-info .name {
     font-family: monospace;
-    font-size: 1rem;
+    font-size: .9rem;
     text-transform: uppercase;
   }
 
@@ -960,7 +960,7 @@
 
 
   .greenbox-quote {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-bottom: 1rem;
   }
 
@@ -973,15 +973,15 @@
   }
 
   .greenbox-author .author-img {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     object-fit: cover;
   }
 
   .greenbox-author-info .name {
     font-family: monospace;
-    font-size: 1rem;
+    font-size: .9rem;
     text-transform: uppercase;
   }
 
@@ -1028,7 +1028,7 @@
 
 
   .purple-quote {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-bottom: 1rem;
   }
 
@@ -1041,15 +1041,15 @@
   }
 
   .purple-author .author-img {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     object-fit: cover;
   }
 
   .purple-author-info .name {
     font-family: monospace;
-    font-size: 1rem;
+    font-size: .9rem;
     text-transform: uppercase;
   }
 
@@ -1098,7 +1098,7 @@
 
 
   .yellow-quote {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-bottom: 1rem;
   }
 
@@ -1111,15 +1111,15 @@
   }
 
   .yellow-author .author-img {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     object-fit: cover;
   }
 
   .yellow-author-info .name {
     font-family: monospace;
-    font-size: 1rem;
+    font-size: .9rem;
     text-transform: uppercase;
   }
 
@@ -1189,7 +1189,7 @@
   }
 
   .green-quote {
-    font-size: 1.1rem;
+    font-size: .9rem;
     margin-bottom: 1rem;
   }
 
@@ -1256,7 +1256,7 @@
 
 
   .pink-quote {
-    font-size: 1rem;
+    font-size: .9rem;
     margin-bottom: 1rem;
   }
 
@@ -1324,7 +1324,7 @@
 
 
   .greenbox-quote {
-    font-size: 1.1rem;
+    font-size: .9rem;
     margin-bottom: 1rem;
   }
 
@@ -1392,7 +1392,7 @@
 
 
   .purple-quote {
-    font-size: 1.1rem;
+    font-size: .9rem;
     margin-bottom: 1rem;
   }
 
@@ -1462,7 +1462,7 @@
 
 
   .yellow-quote {
-    font-size: 1.1rem;
+    font-size: .9rem;
     margin-bottom: 1rem;
   }
 
@@ -1497,7 +1497,7 @@
 @media screen and (max-width: 375px) {
   
   .testimonials-pappers {
-    height: 1079px;
+    height: 900px;
     width: 375px;
 
   }
@@ -1532,7 +1532,7 @@
   }
 
   .green-quote {
-    font-size: .9rem;
+    font-size: .7rem;
     margin-bottom: 1rem;
   }
 
@@ -1578,7 +1578,7 @@
     align-items: center;
     gap: 1.5rem;
     position: absolute;
-    top: 30%;
+    top: 35%;
     left: 10%;
     z-index: 3;
   }
@@ -1599,7 +1599,7 @@
 
 
   .pink-quote {
-    font-size: .8rem;
+    font-size: .6rem;
     margin-bottom: 1rem;
   }
 
@@ -1625,7 +1625,7 @@
   }
 
   .pink-author-info .role {
-    font-size: 0.6rem;
+    font-size: 0.5rem;
     color: #ffffff;
   }
 
@@ -1646,7 +1646,7 @@
     align-items: center;
     gap: 1.5rem;
     position: absolute;
-    top: 15%;
+    top: 20%;
     right: -63%;
     z-index: 5;
   }
@@ -1667,7 +1667,7 @@
 
 
   .greenbox-quote {
-    font-size: .9rem;
+    font-size: .7rem;
     margin-bottom: 1rem;
   }
 
@@ -1714,7 +1714,7 @@
     align-items: center;
     gap: 1.5rem;
     position: absolute;
-    top: 48%;
+    top: 53%;
     right: -72%;
     z-index: 5;
   }
@@ -1735,7 +1735,7 @@
 
 
   .purple-quote {
-    font-size: .8rem;
+    font-size: .7rem;
     margin-bottom: 1rem;
   }
 
@@ -1784,7 +1784,7 @@
     align-items: center;
     gap: 1.5rem;
     position: absolute;
-    top: 60%;
+    top: 70%;
     left: 10%;
     z-index: 6;
   }
@@ -1805,7 +1805,7 @@
 
 
   .yellow-quote {
-    font-size: .8rem;
+    font-size: .7rem;
     margin-bottom: 1rem;
   }
 
@@ -1831,7 +1831,7 @@
   }
 
   .yellow-author-info .role {
-    font-size: 0.6rem;
+    font-size: 0.5rem;
     color: #ffffff;
   }
 

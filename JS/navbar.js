@@ -1,22 +1,29 @@
-const menuToggle = document.querySelector(".menu-toggle");
-const mobileMenu = document.getElementById("mobileMenu");
-const menuIcon = menuToggle.querySelector("i");
+const menuToggle = document.querySelector('.menu-toggle');
+const mobileMenu = document.getElementById('mobileMenu');
+const mobileLinks = document.querySelectorAll('.mobile-nav-link');
 
-menuToggle.addEventListener("click", () => {
-  mobileMenu.classList.toggle("active");
-  document.body.style.overflow = mobileMenu.classList.contains("active")
-    ? "hidden"
-    : "";
-
-  // Toggle icon
-  if (mobileMenu.classList.contains("active")) {
-    menuIcon.classList.remove("fa-bars");
-    menuIcon.classList.add("fa-times");
-  } else {
-    menuIcon.classList.remove("fa-times");
-    menuIcon.classList.add("fa-bars");
-  }
+// Open/Close menu on hamburger click
+menuToggle.addEventListener('click', () => {
+    mobileMenu.classList.toggle('active');
+    menuToggle.classList.toggle('active');
 });
+
+// Close menu when clicking any link
+mobileLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        mobileMenu.classList.remove('active');
+        menuToggle.classList.remove('active');
+    });
+});
+
+// Optional: Close menu when clicking outside
+document.addEventListener('click', (e) => {
+    if (!mobileMenu.contains(e.target) && !menuToggle.contains(e.target)) {
+        mobileMenu.classList.remove('active');
+        menuToggle.classList.remove('active');
+    }
+});
+
 
 
 

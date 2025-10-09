@@ -288,10 +288,11 @@
      .dark-canvas-backdrop {
          width: 92%;
          height: 70%;
+         
      }
 
      .featured-video-wrapper {
-         max-width: 500px;
+         max-width: 400px;
      }
 
      .left-side-gallery,
@@ -301,61 +302,61 @@
      }
 
      .left-side-gallery {
-         left: 20%;
+         left: 15%;
      }
 
      .right-side-gallery {
-         right: 20%;
+         right: 15%;
      }
 
      .left-side-gallery .left-img-one {
          width: 120px;
-         height: 120px;
+         height: 160px;
      }
 
      .left-side-gallery .left-img-two {
-         width: 144px;
-         height: 96px;
+         width: 120px;
+         height: 160px;
      }
 
      .left-side-gallery .left-img-three {
-         width: 160px;
-         height: 224px;
+         width: 120px;
+         height: 160px;
      }
 
      .left-side-gallery .left-img-four {
-         width: 112px;
-         height: 112px;
+         width: 120px;
+         height: 160px;
      }
 
      .left-side-gallery .left-img-five {
-         width: 128px;
-         height: 80px;
+         width: 120px;
+         height: 160px;
      }
 
      .right-side-gallery .right-img-one {
-         width: 144px;
-         height: 96px;
+         width: 120px;
+         height: 160px;
      }
 
      .right-side-gallery .right-img-two {
-         width: 112px;
-         height: 112px;
+         width: 120px;
+         height: 160px;
      }
 
      .right-side-gallery .right-img-three {
-         width: 136px;
-         height: 200px;
+         width: 120px;
+         height: 160px;
      }
 
      .right-side-gallery .right-img-four {
-         width: 152px;
-         height: 112px;
+         width: 120px;
+         height: 160px;
      }
 
      .right-side-gallery .right-img-five {
-         width: 128px;
-         height: 128px;
+         width: 120px;
+         height: 160px;
      }
 
      .brand-slider-section {
@@ -413,61 +414,61 @@
      }
 
      .left-side-gallery {
-         left: 20%;
+         left: 13%;
      }
 
      .right-side-gallery {
-         right: 20%;
+         right: 13%;
      }
 
      .left-side-gallery .left-img-one {
-         width: 90px;
-         height: 90px;
+         width: 110px;
+         height: 150px;
      }
 
      .left-side-gallery .left-img-two {
-         width: 108px;
-         height: 72px;
+         width: 110px;
+         height: 150px;
      }
 
      .left-side-gallery .left-img-three {
-         width: 120px;
-         height: 168px;
+         width: 110px;
+         height: 150px;
      }
 
      .left-side-gallery .left-img-four {
-         width: 84px;
-         height: 84px;
+         width: 110px;
+         height: 150px;
      }
 
      .left-side-gallery .left-img-five {
-         width: 96px;
-         height: 60px;
+         width: 110px;
+         height: 150px;
      }
 
      .right-side-gallery .right-img-one {
-         width: 108px;
-         height: 72px;
+         width: 110px;
+         height: 150px;
      }
 
      .right-side-gallery .right-img-two {
-         width: 84px;
-         height: 84px;
+         width: 110px;
+         height: 150px;
      }
 
      .right-side-gallery .right-img-three {
-         width: 102px;
+         width: 110px;
          height: 150px;
      }
 
      .right-side-gallery .right-img-four {
-         width: 114px;
-         height: 84px;
+         width: 110px;
+         height: 150px;
      }
 
      .right-side-gallery .right-img-five {
-         width: 96px;
-         height: 96px;
+         width: 110px;
+         height: 150px;
      }
 
      .brand-slider-section {
@@ -509,7 +510,7 @@
      }
 
      .featured-video-wrapper {
-         max-width: 300px;
+         max-width: 250px;
      }
 
      .featured-video-wrapper video {
@@ -523,61 +524,61 @@
      }
 
      .left-side-gallery {
-         left: 22%;
+         left: 10%;
      }
 
      .right-side-gallery {
-         right: 22%;
+         right: 10%;
      }
 
      .left-side-gallery .left-img-one {
          width: 70px;
-         height: 70px;
+         height: 100px;
      }
 
      .left-side-gallery .left-img-two {
-         width: 84px;
-         height: 56px;
+         width: 70px;
+         height: 100px;
      }
 
      .left-side-gallery .left-img-three {
-         width: 95px;
-         height: 130px;
+         width: 70px;
+         height: 100px;
      }
 
      .left-side-gallery .left-img-four {
-         width: 65px;
-         height: 65px;
+         width: 70px;
+         height: 100px;
      }
 
      .left-side-gallery .left-img-five {
-         width: 75px;
-         height: 48px;
+         width: 70px;
+         height: 100px;
      }
 
      .right-side-gallery .right-img-one {
-         width: 84px;
-         height: 56px;
+         width: 70px;
+         height: 100px;
      }
 
      .right-side-gallery .right-img-two {
-         width: 65px;
-         height: 65px;
+         width: 70px;
+         height: 100px;
      }
 
      .right-side-gallery .right-img-three {
-         width: 80px;
-         height: 115px;
+         width: 70px;
+         height: 100px;
      }
 
      .right-side-gallery .right-img-four {
-         width: 88px;
-         height: 65px;
+         width: 70px;
+         height: 100px;
      }
 
      .right-side-gallery .right-img-five {
-         width: 75px;
-         height: 75px;
+         width: 70px;
+         height: 100px;
      }
 
      .brand-slider-section {
@@ -611,6 +612,10 @@
          font-size: 13px;
      }
 
+      .featured-video-wrapper {
+         max-width: 200px;
+     }
+
      .left-side-gallery,
      .right-side-gallery {
          width: 160px;
@@ -619,52 +624,52 @@
 
      .left-side-gallery .left-img-one {
          width: 60px;
-         height: 60px;
+         height: 90px;
      }
 
      .left-side-gallery .left-img-two {
-         width: 72px;
-         height: 48px;
+         width: 60px;
+         height: 90px;
      }
 
      .left-side-gallery .left-img-three {
-         width: 80px;
-         height: 110px;
+         width: 60px;
+         height: 90px;
      }
 
      .left-side-gallery .left-img-four {
-         width: 55px;
-         height: 55px;
+         width: 60px;
+         height: 90px;
      }
 
      .left-side-gallery .left-img-five {
-         width: 65px;
-         height: 40px;
+         width: 60px;
+         height: 90px;
      }
 
      .right-side-gallery .right-img-one {
-         width: 72px;
-         height: 48px;
+         width: 60px;
+         height: 90px;
      }
 
      .right-side-gallery .right-img-two {
-         width: 55px;
-         height: 55px;
+         width: 60px;
+         height: 90px;
      }
 
      .right-side-gallery .right-img-three {
-         width: 68px;
-         height: 98px;
+         width: 60px;
+         height: 90px;
      }
 
      .right-side-gallery .right-img-four {
-         width: 75px;
-         height: 55px;
+         width: 60px;
+         height: 90px;
      }
 
      .right-side-gallery .right-img-five {
-         width: 65px;
-         height: 65px;
+         width: 60px;
+         height: 90px;
      }
 
      .brand-logo-image {
