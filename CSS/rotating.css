@@ -8,6 +8,41 @@
    }
  } */
 
+ .circle-wrapper-heading {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 1rem;
+ }
+
+ .circle-logo img {
+   width: 100%;
+   max-width: min(200px, 30vw);
+   height: auto;
+ }
+
+
+ .circle-title {
+   font-size: clamp(1.5rem, 4vw, 4rem);
+   font-weight: 500;
+   text-align: center;
+   font-family: 'Poppins', sans-serif;
+ }
+
+ .circle-btn button {
+   display: inline-block;
+   background: #ff3c00;
+   color: #fff;
+   padding: 16px 40px;
+   border-radius: 100px;
+   text-decoration: none;
+   font-size: 16px;
+   font-weight: 500;
+   transition: all 0.3s ease;
+   box-shadow: 0 10px 30px rgba(255, 60, 0, 0.3);
+ }
+
  .circle-wrapper {
    width: 208vh;
    /* same as circle diameter */
@@ -17,7 +52,7 @@
    /* hides bottom half */
    position: relative;
    margin: 0 auto;
-   padding-top: 25%;
+   padding-top: 20%;
    /* center horizontally */
    /* optionally add bottom margin if needed to offset */
  }
@@ -129,6 +164,10 @@
     --itemSizeHeight: 30vh;
   } */
 
+   .rotating-container {
+     margin-top: 5rem;
+   }
+
    .circle-wrapper {
      width: 75vh;
      height: 70vh;
@@ -173,7 +212,11 @@
  }
 
  @media (max-width: 809px) {
-     .circle-wrapper {
+   .rotating-container {
+     margin-top: 5rem;
+   }
+
+   .circle-wrapper {
      width: 65vh;
      height: 65vh;
      padding-top: 20%;
@@ -217,7 +260,7 @@
  @media screen and (max-width: 480px) {
 
    /* Small mobile */
-        .circle-wrapper {
+   .circle-wrapper {
      width: 50vh;
      height: 85vh;
      padding-top: 30%;

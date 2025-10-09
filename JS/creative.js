@@ -126,7 +126,7 @@ window.addEventListener('scroll', () => {
         
         // Video at final size, centered, and playing
         mainVideoElement.style.opacity = 1;
-        mainVideoElement.style.transform = `translate(-50%, -50%) scale(1.1)`;
+        mainVideoElement.style.transform = `translate(-50%, -50%) scale(0.8)`;
         mainVideoElement.style.zIndex = 15;
         
         // Ensure video is playing
@@ -137,11 +137,11 @@ window.addEventListener('scroll', () => {
         }
         
         // Left elements in final position (inside canvas, left side)
-        leftGalleryContainer.style.transform = `translate(calc(-30% - ${responsiveValues.finalOffset}px), calc(-50% - 8%))`;
+        leftGalleryContainer.style.transform = `translate(calc(-10% - ${responsiveValues.finalOffset}px), calc(-50% - 8%)) scale(0.85`;
         leftGalleryContainer.style.opacity = 1;
         
         // Right elements in final position (inside canvas, right side)
-        rightGalleryContainer.style.transform = `translate(calc(30% + ${responsiveValues.finalOffset}px), calc(-50% - 8%))`;
+        rightGalleryContainer.style.transform = `translate(calc(10% + ${responsiveValues.finalOffset}px), calc(-50% - 8%)) scale(0.85`;
         rightGalleryContainer.style.opacity = 1;
         
         // Show marquee below canvas

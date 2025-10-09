@@ -1132,6 +1132,10 @@
 
 @media screen and (max-width: 480px) {
 
+  .pappers-content {
+    padding:100px 0 0 0;
+  }
+
   .main-text {
     width: 70%;
     font-size: 1.5rem;
@@ -1491,6 +1495,7 @@
 
 
 @media screen and (max-width: 375px) {
+  
   .testimonials-pappers {
     height: 1079px;
     width: 375px;
